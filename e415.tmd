@@ -812,6 +812,9 @@
             <[output][UniversalTime][]
                 <[string8][Input][Clock.OutputUniversalTime]>
             >
+            <[output][LocalTime][]
+                <[string8][Input][Clock.OutputLocalTime]>
+            >			
             <[output][AngleOfAttack][]
                 <[string8][Input][PitotTube.AngleOfAttack]>
             >
@@ -1685,11 +1688,17 @@
                 <[string8][Graphics][_NB_roll_compas_1]>
             >
 			// local time
+            <[graphics_input][LocalTime][]
+                <[uint32][InputID][LocalTime.Output]>
+            >
+            <[graphics_sec_to_hms][Watch][]
+                <[string8][Input][LocalTime.Output]>
+            >				
             <[hingedbodygraphics][needle_seconds_1][]
                 <[string8][GeometryList][ needle_seconds_1 ]>
                 <[uint32][PositionID][Fuselage.R]>
                 <[uint32][OrientationID][Fuselage.Q]>
-                <[uint32][AngleID][Clock.Output]> 
+                <[string8][InputAngle][Watch.Seconds60]>
                 <[float64][AngleMax][0.104667]>
                 <[tmvector3d][Axis][-1.0 0.0 0.0]>
                 <[tmvector3d][Pivot][0.185100 -0.000400 0.107800]>
@@ -1698,7 +1707,7 @@
                 <[string8][GeometryList][ needle_minutes_1 ]>
                 <[uint32][PositionID][Fuselage.R]>
                 <[uint32][OrientationID][Fuselage.Q]>
-                <[uint32][AngleID][Clock.Output]> 
+                <[string8][InputAngle][LocalTime.Output]>
                 <[float64][AngleMax][0.00174445]>
                 <[tmvector3d][Axis][-1.0 0.0 0.0]>
                 <[tmvector3d][Pivot][0.185100 -0.000400 0.107800]>
@@ -1707,7 +1716,7 @@
                 <[string8][GeometryList][ needle_hour_1 ]>
                 <[uint32][PositionID][Fuselage.R]>
                 <[uint32][OrientationID][Fuselage.Q]>
-                <[uint32][AngleID][Clock.Output]> 
+                <[string8][InputAngle][LocalTime.Output]>
                 <[float64][AngleMax][0.00014537037]>
                 <[tmvector3d][Axis][-1.0 0.0 0.0]>
                 <[tmvector3d][Pivot][0.185100 -0.000400 0.107800]>
