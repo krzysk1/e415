@@ -5,6 +5,7 @@
         <[string8][DisplayName][Ercoupe 415-C]>
         <[string8][DescriptionTextEN][The ERCO Ercoupe is a low-wing monoplane aircraft that was designed and built in the United States. It was first manufactured by the Engineering and Research Corporation (ERCO) shortly before World War II; several other manufacturers continued its production after the war.
 		Aerofly FS 2 aircraft made by Krzysztof Kaniewski. Flight Model, systems and animations by Arno54, 3D model by Khamsin (http://xpfr.org/).]>
+		<[float64][WingSpan][9.2]>		
 		<[float64][Mass][485]>
 		<[float64][MaximumSpeed][48.0]>
 		<[float64][MinimumSpeed][21.0]>	
