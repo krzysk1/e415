@@ -1222,7 +1222,7 @@
 				<[uint32][PositionID][Fuselage.R]>
 				<[uint32][OrientationID][Fuselage.Q]>
 				<[uint32][AngleID][Propeller.RotationAngle]>
-				<[tmvector3d][Axis][1.0 0.0 0.0]>
+				<[tmvector3d][Axis][-1.0 0.0 0.0]>
 				<[tmvector3d][Pivot][1.7 0.0 0.0]>
 			>
 			<[graphics_propeller_blade][PropellerBlade][]
@@ -1232,7 +1232,7 @@
 				<[uint32][AngleID][Propeller.RotationAngle]>
 				<[uint32][RotationSpeedID][Propeller.RotationSpeed]>
 				<[uint32][DamageID][Propeller.Damaged]>
-				<[tmvector3d][Axis][-1.0 0.0 0.0]>
+				<[tmvector3d][Axis][1.0 0.0 0.0]>
 				<[tmvector3d][Pivot][1.7 0.0 0.0]>
 				<[float64][Radius][1.000]>
 				<[string8][InputPitch][0.0]>
