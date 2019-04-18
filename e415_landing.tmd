@@ -1,0 +1,60 @@
+<[file][][]
+    <[modelmanager][][]
+        <[pointer_list_tmuniverse][DynamicObjects][]
+
+            // engine
+            <[input_lever][Mixture][141]
+                <[float64][Value][1]>
+            >
+            <[input_discrete_momentary][Magnetos][145]
+                <[float64][Value][3]>
+            >
+            <[input_lever][ThrottleInput][137]
+                <[float64][Value][0.374382558142287]>
+            >
+            <[servoclassic][ServoThrottle][139]
+                <[float64][Position][0.374382558142287]>
+            >
+            <[multibody_joint][PropellerJoint][]
+                <[float64][InitialVelocity][190.0]>
+            >
+
+            // gear bolted down
+
+            // trim for landing
+            <[input_default][PitchTrim][84]
+                <[float64][Value][-0.446274428698863]>
+            >
+            <[input_control][ElevatorInput][156]
+                <[float64][Value][-0.00712433027188032]>
+            >
+            <[servoclassic][ServoElevator][157]
+                <[float64][Position][-0.14773844171937]>
+            >
+            <[input_control][AileronInput][160]
+                <[float64][Value][0.0223599811985427]>
+            >
+            <[servoclassic][YokeAileron][161]
+                <[float64][Position][0.0223603096796036]>
+            >
+
+            // lights
+            <[input_switch][NavigationLightSwitch][0]
+                <[float64][Value][1.0]>
+            >
+            <[input_switch][LandingLightSwitch][0]
+                <[float64][Value][1.0]>
+            >
+
+            // panel state
+            <[input_switch][SwitchAvionicsBus1][0]
+                <[float64][Value][1.0]>
+            >
+            <[input_switch][SwitchAvionicsBus2][0]
+                <[float64][Value][1.0]>
+            >
+			
+        >
+    >
+>
+

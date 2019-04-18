@@ -1,0 +1,83 @@
+<[file][][]
+    <[modelmanager][][]
+        <[pointer_list_tmuniverse][DynamicObjects][]
+
+            // engine
+            <[input_lever][ThrottleInput][63]
+                <[float64][Value][0.6]>
+            >
+            <[servoclassic][ServoThrottle][65]
+                <[float64][Position][0.6]>
+            >
+            <[multibody_joint][PropellerJoint][]
+                <[float64][InitialVelocity][256.0]>
+            >
+
+            // gear bolted down
+
+            // flaps up
+            <[input_default][FlapsInput][0]
+                <[float64][Value][0.0]>
+            >
+            <[electrical_actuator][FlapsMotor][0]
+                <[float64][Position][0.0]>
+            >
+
+            // maybe lean mixture a bit
+
+            // trim forward
+            <[input_default][PitchTrim][84]
+                <[float64][Value][0.54]>
+            >
+            <[servoclassic][ServoElevator][69]
+                <[float64][Position][-0.0455]>
+            >
+
+            // lights
+            <[input_switch][StrobeLightSwitch][0]
+                <[float64][Value][1.0]>
+            >
+            <[input_switch][BeaconLightSwitch][0]
+                <[float64][Value][1.0]>
+            >
+            <[input_switch][NavigationLightSwitch][0]
+                <[float64][Value][1.0]>
+            >
+            <[input_switch][LandingLightSwitch][0]
+                <[float64][Value][0.0]>
+            >
+            <[input_switch][TaxiLightSwitch][0]
+                <[float64][Value][0.0]>
+            >
+
+            // panel state
+            <[input_switch][SwitchAvionicsBus1][0]
+                <[float64][Value][1.0]>
+            >
+            <[input_switch][SwitchAvionicsBus2][0]
+                <[float64][Value][1.0]>
+            >
+
+            <[input_switch][DMESelectedOn][0]
+                <[float64][Value][1.0]>
+            >
+            <[input_default][ADFVolume][0]
+                <[float64][Value][0.1]>
+            >
+            <[input_default][COM1Volume][0]
+                <[float64][Value][0.6]>
+            >
+            <[input_default][COM2Volume][0]
+                <[float64][Value][0.1]>
+            >
+            <[input_discrete][TransponderMode][0]
+                <[float64][Value][4.0]>
+            >
+            <[variable][TransponderIdent][0]
+                <[float64][Value][0.0]>
+            >
+
+        >
+    >
+>
+
