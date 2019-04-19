@@ -1,0 +1,25 @@
+<[file][][]
+    <[hints][][]
+        // Ercoupe 415-C
+        <[float64][MaximumTakeOffMass][572.0]>
+        <[float64][WingSpan][9.2]>
+        <[float64][WingArea][13.2]>
+        <[float64][HeightOffset][-1.152]>
+        <[float64][NoseWheelPositionX][1.317]>
+        <[float64][ApproachSpeed][23.3]>
+        <[float64][PatternSpeed][36.6]>
+        <[float64][InitialClimbSpeed][27.04]>
+        <[string8][AutoPilotType][BASIC]>
+        <[bool][ParkingBrake][true]>
+        <[bool][RudderTrimRequired][true]>
+        <[float64][PitchTrimTakeOff][-0.18]>
+        <[float64][ElevatorGain][1.0]>
+        <[float64][AileronGain][1.0]>
+        <[float64][RudderGain][2.0]>
+        <[float64][RudderCrossWind][1.5]>
+        <[float64][RudderTakeOff][0.05]>
+        <[float64][FlareHeightScaling][0.5]>
+        <[float64][FlareExpectedNoseDrop][0.2]>
+    >
+>
+

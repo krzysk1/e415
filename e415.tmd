@@ -615,11 +615,11 @@
 
             // primary flight controls start
 	
-			<[input_default][AileronInput][]
+            <[input_control][AileronInput][]
 				<[string8][Input][Controls.Roll.Input]>
 				<[tmvector2d][Range][ -1.0 1.0 ]>
 			>		
-			<[input_default][ElevatorInput][]
+            <[input_control][ElevatorInput][]
 				<[string8][Input][Controls.Pitch.Input]>
 				<[tmvector2d][Range][ -1.0 1.0 ]>
 			>
