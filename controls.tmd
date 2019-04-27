@@ -260,7 +260,7 @@
             <[control_input][ParkingBrakeInput][2]
 				<[uint32][InputID][BrakeHandleRotated.Output]>
             >
-            <[control_product][ParkingBrakeTravel][2]zzzzzZz
+            <[control_product][ParkingBrakeTravel][2]
                 <[uint32][Inputs][ ParkingBrakeInput.Output 0.0296 ]>
             >
             <[control_product][ParkingBrakeRotate][2]
