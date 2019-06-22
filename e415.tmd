@@ -289,13 +289,6 @@
                 <[float64][Speed][20.0]>
                 <[float64][Damping][0.8]>
             >
-            <[logic_greater][FuelLevelLow][]
-                <[string8][Input0][5.0]>
-                <[string8][Input1][FuelTank.Output]>
-            >
-            <[output_free][FuelLevelLowOutput][]
-                <[string8][Input][FuelLevelLow.Output]>
-            >
 			
             // fuel after fuel selector
 			<[input_switch][FuelSelectorSwitch][]
@@ -2685,7 +2678,7 @@
                 <[string8][InputPitch][PitchStarter.Output]>
                 <[uint32][PositionID][Fuselage.R]>
                 <[uint32][VelocityID][Fuselage.V]>
-				<[string8][SoundFile][star1.wav]>
+				<[string8][SoundFile][start1.wav]>
 			>
 
 			// engine loop rpm_eng 1300.0

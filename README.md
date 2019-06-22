@@ -14,3 +14,5 @@ Installation
 1. Unzip file and move the folder "e415" to C:\Users\~\Documents\Aerofly FS2\aircraft.
 
 Note: there are no pedals = rudder is connected with ailerons
+
+Aircraft Technical Data & Specifications: http://www.airliners.net/aircraft-data/erco-ercoupe-and-derivatives/393
