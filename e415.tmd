@@ -390,7 +390,7 @@
 				<[float64][ClAlpha][6.28]>
 				<[float64][CdAlpha][0.4]>
 				<[float64][CmAlpha][0.0]>
-				<[float64][ClFlap][1.5]>
+				<[float64][ClFlap][2.1]>
 				<[float64][CdFlap][0.0]>
 				<[float64][CmFlap][-0.02]>
 				<[float64][Cd0Base][0.005]>
@@ -410,7 +410,7 @@
 				<[float64][ClAlpha][6.28]>
 				<[float64][CdAlpha][0.4]>
 				<[float64][CmAlpha][0.0]>
-				<[float64][ClFlap][1.5]>
+				<[float64][ClFlap][2.1]>
 				<[float64][CdFlap][0.0]>
 				<[float64][CmFlap][-0.02]>
 				<[float64][Cd0Base][0.005]>
@@ -1063,10 +1063,13 @@
 			>
 			<[balance_indicator][BalanceIndicator][]
 				<[string8][Body][Fuselage]>
-				<[tmvector3d][R0][0.195 0.1019 0.0703]>
+				<[tmvector3d][R0][0.192 0.1019 0.1292]>
 				<[float64][Radius][0.12]>
 				<[float64][Limit][0.03]>
 			>
+            <[output][BalanceIndicatorDeviation][]
+                <[string8][Input][BalanceIndicator.Output]>
+            >			
 			<[clock][Clock][]
 			>
 			<[output][UniversalTime][]
@@ -1455,7 +1458,7 @@
 				<[uint32][PositionID][Fuselage.R]>
 				<[uint32][OrientationID][Fuselage.Q]>
 				<[uint32][AngleID][Propeller.RotationAngle]>
-				<[tmvector3d][Axis][-1.0 0.0 0.0]>
+				<[tmvector3d][Axis][1.0 0.0 0.0]>
 				<[tmvector3d][Pivot][1.7 0.0 0.0]>
 			>
 			<[graphics_propeller_blade][PropellerBlade][]
@@ -1465,7 +1468,7 @@
 				<[uint32][AngleID][Propeller.RotationAngle]>
 				<[uint32][RotationSpeedID][Propeller.RotationSpeed]>
 				<[uint32][DamageID][Propeller.Damaged]>
-				<[tmvector3d][Axis][1.0 0.0 0.0]>
+				<[tmvector3d][Axis][-1.0 0.0 0.0]>
 				<[tmvector3d][Pivot][1.7 0.0 0.0]>
 				<[float64][Radius][1.0]>
 				<[string8][InputPitch][0.0]>
@@ -1477,7 +1480,7 @@
 				<[uint32][AngleID][Propeller.RotationAngle]>
 				<[uint32][RotationSpeedID][Propeller.RotationSpeed]>
 				<[uint32][DamageID][Propeller.Damaged]>
-				<[tmvector3d][Axis][-1.0 0.0 0.0]>
+				<[tmvector3d][Axis][1.0 0.0 0.0]>
 				<[tmvector3d][Pivot][1.7 0.0 0.0]>
 				<[uint32][BladeNumber][2]>
 				<[float64][Radius][1.0]>
@@ -1746,27 +1749,16 @@
 				<[string8][InputTransform][IgnitionMoving.Output]>				
                 <[string8][InputIllumination0][PanelLighting.Output]>				
 			>
-			<[graphics_input][CockpitInput_9][]
-				<[uint32][InputID][SideSlip.Output]>
-				<[float64][Scaling][-57.29577]>
-			>
-			<[graphics_mapping][CockpitMapping_159][]
-				<[string8][Input][CockpitInput_9.Output]>
-				<[tmvector2d][Map][(-360.0 -0.301069) (-2.0 -0.273144) (0.0 0.0) (2.0 0.273144) (360.0 0.301069) ]>
-			>
-			<[hingedbodygraphics][turnSphere_1][]
-			// <[string8][GeometryList][ turnsphere_1 ]>
+			// balance indicator
+			<[hingedbodygraphics][TurnSphere][]
+			    <[string8][GeometryList][ turnsphere_1 ]>
 				<[uint32][PositionID][Fuselage.R]>
 				<[uint32][OrientationID][Fuselage.Q]>
-				<[string8][InputAngle][CockpitMapping_159.Output]>
+                <[float64][AngleMax][0.22]>
+                <[string8][AngleID][BalanceIndicatorDeviation.Output]>
 				<[tmvector3d][Axis][1.0 0.0 0.0]>
 				<[tmvector3d][Pivot][0.1802 0.1019 0.1292]>
                 <[string8][InputIllumination0][PanelLighting.Output]>					
-			>
-			<[rigidbodygraphics][BalanceIndicatorBall][]
-				<[string8][GeometryList][ turnsphere_1 ]>
-				<[uint32][PositionID][BalanceIndicatorBall.R]>
-                <[string8][InputIllumination0][PanelLighting.Output]>		
 			>
 			// battery swith
 			<[hingedbodygraphics][switchBattery_1][]
@@ -2595,11 +2587,11 @@
 			>
 			<[soundmapping][FlightVolume][]
 				<[string8][Input][Airspeed.Output]>
-				<[tmvector2d][Map][ (0.0 0.0) (10.0 0.0) (15.0 0.5) (100.0 1.5) (200.0 2.0) ]>
+				<[tmvector2d][Map][ (0.0 0.0) (10.0 0.0) (15.0 0.5) (100.0 0.8) (200.0 2.0) ]>
 			>
 			<[soundmapping][FlightPitch][]
 				<[string8][Input][Airspeed.Output]>
-				<[tmvector2d][Map][ (0.0 0.80) ( 130.0 1.0 ) (200.0 3.2) ]>
+				<[tmvector2d][Map][ (0.0 0.80) ( 60.0 1.0 ) (200.0 2.2) ]>
 			>
 			<[soundloop][FlightVolumeLoop][]
 				<[string8][InputVolume][FlightVolume.Output]>
