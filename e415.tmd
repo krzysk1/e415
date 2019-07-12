@@ -143,7 +143,7 @@
                 <[string8][Body0][LeftWing]>
                 <[string8][Body1][LeftGear]>
                 <[tmvector3d][X0][ 0.0 0.0 1.0 ]>
-   				<[tmvector3d][R0][ -0.387881 1.249680 -0.563880 ]>
+   				<[tmvector3d][R0][ -0.0943 1.121 -0.4114 ]>
                 <[float64][Kp][100000.0]>
                 <[float64][Kd][2500.0]>
                 <[float64][InitialVelocity][0.0]>
@@ -159,6 +159,9 @@
 				<[float64][K][78800]>
 				<[float64][D][591]>
 				<[float64][Radius][0.204216]>
+                <[float64][Width][0.1623]>
+                <[float64][RimRadius][0.85]>
+                <[float64][Inflation][284738.0]>					
 				<[string8][Body][LeftGear]>
 				<[tmvector3d][R0][-0.388 1.2559 -1.0991]>
 				<[tmvector3d][X0][ 1.0 0.0 0.0 ]>
@@ -202,7 +205,10 @@
 			<[wheel][FrontWheelHull][]
 				<[float64][K][36800]>
 				<[float64][D][276]>
-				<[float64][Radius][0.152400]>
+				<[float64][Radius][0.1524]>
+                <[float64][Width][0.12]>
+                <[float64][RimRadius][0.65]>
+                <[float64][Inflation][204738.0]>				
 				<[string8][Body][FrontGear]>
 				<[tmvector3d][R0][1.3174 0.0 -1.1525]>
 				<[tmvector3d][X0][ 1.0 0.0 0.0 ]>
@@ -224,8 +230,8 @@
             <[multibody_joint][JointRightWingRightGear][]
                 <[string8][Body0][RightWing]>
                 <[string8][Body1][RightGear]>
-                <[tmvector3d][X0]    [ 0.0 0.0 1.0 ]>
-				<[tmvector3d][R0][ -0.387881 -1.249680 -0.563880 ]>
+                <[tmvector3d][X0][ 0.0 0.0 1.0 ]>
+				<[tmvector3d][R0][  -0.0943 -1.121 -0.4114 ]>
                 <[float64][Kp][100000.0]>
                 <[float64][Kd][2500.0]>
                 <[float64][InitialVelocity][0.0]>
@@ -241,6 +247,9 @@
 				<[float64][K][78800]>
 				<[float64][D][591]>
 				<[float64][Radius][0.204216]>
+                <[float64][Width][0.1623]>
+                <[float64][RimRadius][0.85]>
+                <[float64][Inflation][284738.0]>			
 				<[string8][Body][RightGear]>
 				<[tmvector3d][R0][-0.388 -1.2559 -1.0991]>
 				<[tmvector3d][X0][ 1.0 0.0 0.0 ]>
@@ -368,12 +377,12 @@
             // bodies			
 			<[aerofuselage][FuselageAero][]
 				<[string8][Body][Fuselage]>
-				<[float64][StationX][ 1.6390 1.5781 1.5171 1.2428 0.3589 0.1760 -0.1288 -1.3480 -4.6551 ]>
+				<[float64][StationX][ 1.6390 1.5781 1.5171 1.2428 0.3589 0.1760 -0.1288 -1.3480 -4.5016 ]>
 				<[float64][StationY][ 0.0 0.0 0.0 0.0 0.0 -0.0 -0.0 -0.0 0.0 ]>
 				<[float64][StationZ][ -0.0087 -0.0561 -0.0908 -0.1953 -0.2672 -0.1561 -0.0960 -0.1614 -0.0778 ]>
 				<[float64][StationWidth][ 0.01 0.8273 0.8012 0.9841 1.0624 1.0624 1.0886 1.0624 0.0816 ]>
 				<[float64][StationHeight][ 0.01 0.4958 0.6175 0.8265 1.0747 1.2968 1.4013 0.9833 0.2518 ]>
-				<[uint32][StationShape][ 1 0 0 0 0 1 1 0 1 ]>
+				<[uint32][StationShape][ 1 0 0 0 0 0 0 0 1 ]>
 				<[float64][Cdx][ 0.1250 ]>
 				<[float64][Cdy][ 1.0 ]>
 				<[float64][Cdz][ 1.5 ]>
@@ -518,13 +527,13 @@
 				<[float64][Span][1.3716]>
 				<[float64][Area][1.024256]>
 				<[string8][Flap0Control][ServoElevator.Output]>
-				<[float64array][StationY]		   [ 0.0 1.32486 ]>
-				<[float64array][StationLE]		  [ -3.634 -4.10330 ]>
-				<[float64array][StationTE]		  [ -4.60936 -4.62146 ]>
-				<[float64array][StationZ]		   [ 0.09144 0.09144 ]>
-				<[float64array][StationIncidence]   [ 0.06981 0.06981 ]>
-				<[uint32array][StationFlap]		 [ 1 1 ]>
-				<[float64array][StationFlapFraction][ 0.50 0.50 ]>
+				<[float64array][StationY]		   [ 0.0  0.4788 0.6409 1.2814 ]>
+				<[float64array][StationLE]		  [ -3.4638 -3.6108 -3.6605 -3.847 ]>
+				<[float64array][StationTE]		  [ -4.12 -4.12 -4.3597 -4.3597 ]>
+				<[float64array][StationZ]		   [ 0.09144 0.09144 0.09144 0.09144 ]>
+				<[float64array][StationIncidence]   [ 0.06981 0.06981 0.06981 0.06981 ]>
+				<[uint32array][StationFlap]		 [ 1 1 1 0 ]>
+				<[float64array][StationFlapFraction][ 0.20 0.50 0.50 0.50 ]>
 				<[float64][AspectRatioMultiplier][2.0]>
 				<[string8][AirfoilRoot][AirfoilHorizontalStabilizer]>
 				<[string8][AirfoilTip][AirfoilHorizontalStabilizer]>
@@ -541,13 +550,13 @@
 				<[float64][Span][1.3716]>
 				<[float64][Area][1.024256]>
 				<[string8][Flap0Control][ServoElevator.Output]>
-				<[float64array][StationY]		   [ -1.32486 0.0 ]>
-				<[float64array][StationLE]		  [ -4.10330 -3.634 ]>
-				<[float64array][StationTE]		  [ -4.62146 -4.60936 ]>
-				<[float64array][StationZ]		   [ 0.09144 0.09144 ]>
-				<[float64array][StationIncidence]   [ 0.06981 0.06981 ]>
-				<[uint32array][StationFlap]		 [ 1 1 ]>
-				<[float64array][StationFlapFraction][ 0.50 0.50 ]>
+				<[float64array][StationY]		   [ -1.2814 -0.6409 -0.4788 0.0 ]>
+				<[float64array][StationLE]		  [ -3.847 -3.6605 -3.6108 -3.4638 ]>
+				<[float64array][StationTE]		  [ -4.3597 -4.3597 -4.12 -4.12 ]>
+				<[float64array][StationZ]		   [ 0.09144 0.09144 0.09144 0.09144 ]>
+				<[float64array][StationIncidence]   [ 0.06981 0.06981 0.06981 0.06981 ]>
+				<[uint32array][StationFlap]		 [ 1 1 1 0]>
+				<[float64array][StationFlapFraction][ 0.50 0.50 0.20 0.0]>
 				<[float64][AspectRatioMultiplier][2.0]>
 				<[string8][AirfoilRoot][AirfoilHorizontalStabilizer]>
 				<[string8][AirfoilTip][AirfoilHorizontalStabilizer]>
@@ -564,13 +573,13 @@
 				<[float64][Span][0.9144]>
 				<[float64][Area][0.557418]>
 				<[string8][Flap0Control][ServoRudder.Output]>
-				<[float64array][StationY]		   [ 1.31064 1.31064 ]>
-				<[float64array][StationLE]		  [ -4.03024 -4.03024 ]>
-				<[float64array][StationTE]		  [ -4.63984 -4.63984 ]>
-				<[float64array][StationZ]		   [ -0.18288 0.73152 ]>
-				<[float64array][StationIncidence]   [ 0.0 0.0 ]>
-				<[uint32array][StationFlap]		 [ 1 0 ]>
-				<[float64array][StationFlapFraction][ 0.50 0.00 ]>
+				<[float64array][StationY]		   [ 1.31064 1.31064 1.31064 1.31064 1.31064 ]>
+				<[float64array][StationLE]		  [ -3.9958 -3.8918 -3.847 -3.9453 -4.0297 ]>
+				<[float64array][StationTE]		  [ -4.236 -4.2845 -4.3982 -4.2527 -4.1809 ]>
+				<[float64array][StationZ]		   [ -0.133 -0.085 0.1991 0.7067 0.804 ]>
+				<[float64array][StationIncidence]   [ 0.0 0.0 0.0 0.0 0.0]>
+				<[uint32array][StationFlap]		 [ 1 1 1 1 0 ]>
+				<[float64array][StationFlapFraction][ 0.65 0.65 0.65 0.65 0.00 ]>
 				<[float64][AspectRatioMultiplier][1.0]>
 				<[string8][AirfoilRoot][AirfoilVerticalStabilizer]>
 				<[string8][AirfoilTip][AirfoilVerticalStabilizer]>
@@ -586,13 +595,13 @@
 				<[float64][Span][0.9144]>
 				<[float64][Area][0.557418]>
 				<[string8][Flap0Control][ServoRudder.Output]>
-				<[float64array][StationY]		   [ -1.31064 -1.31064 ]>
-				<[float64array][StationLE]		  [ -4.03024 -4.03024 ]>
-				<[float64array][StationTE]		  [ -4.63984 -4.63984 ]>
-				<[float64array][StationZ]		   [ -0.18288 0.73152 ]>
-				<[float64array][StationIncidence]   [ 0.0 0.0 ]>
-				<[uint32array][StationFlap]		 [ 1 0 ]>
-				<[float64array][StationFlapFraction][ 0.50 0.00 ]>
+				<[float64array][StationY]		   [ -1.31064 -1.31064 -1.31064 -1.31064 -1.31064 ]>
+				<[float64array][StationLE]		  [ -3.9958 -3.8918 -3.847 -3.9453 -4.0297 ]>
+				<[float64array][StationTE]		  [ -4.236 -4.2845 -4.3982 -4.2527 -4.1809 ]>
+				<[float64array][StationZ]		   [ -0.133 -0.085 0.1991 0.7067 0.804 ]>
+				<[float64array][StationIncidence]   [ 0.0 0.0 0.0 0.0 0.0]>
+				<[uint32array][StationFlap]		 [ 1 1 1 1 0 ]>
+				<[float64array][StationFlapFraction][ 0.65 0.65 0.65 0.65 0.00 ]>
 				<[float64][AspectRatioMultiplier][1.0]>
 				<[string8][AirfoilRoot][AirfoilVerticalStabilizer]>
 				<[string8][AirfoilTip][AirfoilVerticalStabilizer]>
