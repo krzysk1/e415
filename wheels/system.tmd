@@ -1,0 +1,313 @@
+<[file][][]
+    <[modelmanager][][]
+        <[pointer_list_tmgraphics][DynamicObjects][]
+            // left main gear
+			<[rigidbody][LeftGear][]
+				<[float64][Mass][10.3]>
+				<[tmvector3d][InertiaLength][ 0.408432 0.1524 0.813816 ]>
+				<[tmvector3d][R0][-0.387881 1.249680 -0.868680]>
+				<[tmmatrix3d][B0][1.0 0.0 0.0 0.0 1.0 0.0 0.0 0.0 1.0]>
+			>
+            <[multibody_joint][JointLeftWingLeftGear][]
+                <[string8][Body0][LeftWing]>
+                <[string8][Body1][LeftGear]>
+                <[tmvector3d][X0][ 0.0 0.0 1.0 ]>
+   				<[tmvector3d][R0][ -0.0943 1.121 -0.4114 ]>
+                <[float64][Kp][100000.0]>
+                <[float64][Kd][2500.0]>
+                <[float64][InitialVelocity][0.0]>
+                <[uint32][Type][1]>
+            >
+		 // <[collisionhull][CollisionLeftGear][]
+		  // <[string8][Body][LeftGear]>
+		 // <[string8][Geometry][Trainarrgch30]>
+		 // <[float64][K][1940000]>	
+		 // <[float64][D][29100]>
+		 // >			
+			<[wheel][LeftWheelHull][]
+				<[float64][K][78800]>
+				<[float64][D][591]>
+				<[float64][Radius][0.204216]>
+                <[float64][Width][0.1623]>
+                <[float64][RimRadius][0.085]>
+                <[float64][Inflation][284738.0]>					
+				<[string8][Body][LeftGear]>
+				<[tmvector3d][R0][-0.388 1.2559 -1.0991]>
+				<[tmvector3d][X0][ 1.0 0.0 0.0 ]>
+                <[string8][InputBrake][LeftBrake.Output]>
+                <[float64][BrakeStrength][0.55]>				
+			>
+			<[output][GroundRollSpeedLeft][]
+				<[string8][Input][LeftWheelHull.Speed]>
+			>
+			<[output][GroundRollLoadLeft][]
+				<[string8][Input][LeftWheelHull.Load]>
+			>
+			
+            // nose gear			
+			<[rigidbody][FrontGear][]
+				<[float64][Mass][6.1]>
+				<[tmvector3d][InertiaLength][ 0.3048 0.121920 0.9176 ]>
+				<[tmvector3d][R0][1.312904 0.0 -0.8409]>
+				<[tmmatrix3d][B0][0.984808 0.0 0.173648 0.0 1.0 0.0 -0.173648 0.0 0.984808]>
+			>
+			<[jointlinear][JointFuselageFrontGear][]
+				<[tmvector3d][R0][ 1.1292 0.0  -0.3821 ]>
+				<[float64][Kfx][92000.0]>
+				<[float64][Kfy][92000.0]>
+				<[float64][Kfz][46000.0]>
+				<[float64][Dfx][184.292]>
+				<[float64][Dfy][184.292]>
+				<[float64][Dfz][184.292]>
+				<[float64][Ktx][18400.0]>
+				<[float64][Kty][18400.0]>
+				<[float64][Ktz][18400.0]>
+				<[float64][Dtx][36.8]>
+				<[float64][Dty][36.8]>
+				<[float64][Dtz][36.8]>
+				<[string8][Body0][Fuselage]>
+				<[string8][Body1][FrontGear]>
+				<[string8][Rotation1Control][ServoSteering.Output]>
+				<[tmvector3d][Rotation1Axis][ -0.173648 0.0 -0.984808 ]>
+				<[float64][Rotation1Angle][1.0]>
+			>
+			<[wheel][FrontWheelHull][]
+				<[float64][K][36800]>
+				<[float64][D][276]>
+				<[float64][Radius][0.1524]>
+                <[float64][Width][0.12]>
+                <[float64][RimRadius][0.065]>
+                <[float64][Inflation][204738.0]>				
+				<[string8][Body][FrontGear]>
+				<[tmvector3d][R0][1.3174 0.0 -1.1525]>
+				<[tmvector3d][X0][ 1.0 0.0 0.0 ]>
+			>
+			<[output][GroundRollSpeedFront][]
+				<[string8][Input][FrontWheelHull.Speed]>
+			>
+			<[output][GroundRollLoadFront][]
+				<[string8][Input][FrontWheelHull.Load]>
+			>
+			
+            // right main gear			
+			<[rigidbody][RightGear][]
+				<[float64][Mass][10.3]>
+				<[tmvector3d][InertiaLength][ 0.408432 0.1524 0.813816 ]>
+				<[tmvector3d][R0][-0.387881 -1.249680 -0.868680]>
+				<[tmmatrix3d][B0][1.0 0.0 0.0 0.0 1.0 0.0 0.0 0.0 1.0]>
+			>
+            <[multibody_joint][JointRightWingRightGear][]
+                <[string8][Body0][RightWing]>
+                <[string8][Body1][RightGear]>
+                <[tmvector3d][X0][ 0.0 0.0 1.0 ]>
+				<[tmvector3d][R0][  -0.0943 -1.121 -0.4114 ]>
+                <[float64][Kp][100000.0]>
+                <[float64][Kd][2500.0]>
+                <[float64][InitialVelocity][0.0]>
+                <[uint32][Type][1]>
+            >
+		 // <[collisionhull][CollisionRightGear][]
+		  // <[string8][Body][RightGear]>
+		 // <[string8][Geometry][Trainarrdte30]>
+		 // <[float64][K][1940000]>
+		 // <[float64][D][29100]>
+		 // >			
+			<[wheel][RightWheelHull][]
+				<[float64][K][78800]>
+				<[float64][D][591]>
+				<[float64][Radius][0.204216]>
+                <[float64][Width][0.1623]>
+                <[float64][RimRadius][0.085]>
+                <[float64][Inflation][284738.0]>			
+				<[string8][Body][RightGear]>
+				<[tmvector3d][R0][-0.388 -1.2559 -1.0991]>
+				<[tmvector3d][X0][ 1.0 0.0 0.0 ]>
+                <[string8][InputBrake][LeftBrake.Output]>
+                <[float64][BrakeStrength][0.55]>				
+			>
+			<[output][GroundRollSpeedRight][]
+				<[string8][Input][RightWheelHull.Speed]>
+			>
+			<[output][GroundRollLoadRight][]
+				<[string8][Input][RightWheelHull.Load]>
+			>
+        >
+        <[pointer_list_tmgraphics][GraphicObjects][]
+			// caddy-ercoupe_ext
+			<[rigidbodygraphics][trainCarenage_0][]
+				<[string8][GeometryList][ CaddyErcoupeExt0 Traincarenage0 ]>
+				<[uint32][PositionID][Fuselage.R]>
+				<[uint32][OrientationID][Fuselage.Q]>
+			>
+			<[graphics_input][caddy-ercoupe_extInput_0][]
+				<[uint32][InputID][GroundRollLoadRight.Output]>
+				<[float64][Scaling][0.00005]>
+			>
+			<[graphics_linear_interpolation][caddy-ercoupe_extMapping_4][]
+				<[string8][Input][caddy-ercoupe_extInput_0.Output]>
+				<[tmvector2d][Map][(0 0.0) (0.25 0.344353)]>
+			>
+			<[hingedbodygraphics][trainArrDte3_0][]
+				<[string8][GeometryList][ Trainarrdte30 ]>
+				<[uint32][PositionID][Fuselage.R]>
+				<[uint32][OrientationID][Fuselage.Q]>
+				<[string8][Input][caddy-ercoupe_extMapping_4.Output]>
+                <[tmvector3d][Axis][ -0.0 1.0 -0.0 ]>
+				<[tmvector3d][Pivot][-0.0894 -1.108 -0.8071]>
+			>
+			<[hingedbodygraphics][RightWheel][]
+				<[string8][GeometryList][ Trainarrrouearrdte0 ]>
+				<[uint32][PositionID][RightGear.R]>
+				<[uint32][OrientationID][RightGear.Q]>
+				<[uint32][InputID][RightWheelHull.RotationAngle]>
+                <[tmvector3d][Axis][ -0.0 1.0 -0.0 ]>
+				<[tmvector3d][Pivot][-0.388 -1.2562 -1.0991]>
+				<[string8][Graphics][trainArrDte3_0]>
+			>
+			<[graphics_linear_interpolation][caddy-ercoupe_extMapping_13][]
+				<[string8][Input][caddy-ercoupe_extInput_0.Output]>
+				<[tmvector2d][Map][ (0 0.0) (0.25 0.0579)]>
+			>
+			<[graphics_translation][caddy-ercoupe_extMoving_13][]
+				<[string8][Input][caddy-ercoupe_extMapping_13.Output]>
+				<[tmvector3d][Axis][0.0 0.0 0.0579]>
+			>
+			<[rigidbodygraphics][trainArrDte2_001_0][]
+				<[string8][GeometryList][ Trainarrdte20010 ]>
+				<[uint32][PositionID][Fuselage.R]>
+				<[uint32][OrientationID][Fuselage.Q]>
+				<[string8][InputTransform][caddy-ercoupe_extMoving_13.Output]>
+			>
+			<[graphics_input][caddy-ercoupe_extInput_2][]
+				<[uint32][InputID][GroundRollLoadLeft.Output]>
+				<[float64][Scaling][0.00005]>
+			>
+			<[graphics_linear_interpolation][caddy-ercoupe_extMapping_18][]
+				<[string8][Input][caddy-ercoupe_extInput_2.Output]>
+				<[tmvector2d][Map][(0 0.0) (0.3 0.324806)]>
+			>
+			<[hingedbodygraphics][trainArrGch3_0][]
+				<[string8][GeometryList][ Trainarrgch30 ]>
+				<[uint32][PositionID][Fuselage.R]>
+				<[uint32][OrientationID][Fuselage.Q]>
+				<[string8][Input][caddy-ercoupe_extMapping_18.Output]>
+                <[tmvector3d][Axis][ -0.0 1.0 -0.0 ]>
+				<[tmvector3d][Pivot][-0.0894 1.1077 -0.8071]>
+			>
+			<[hingedbodygraphics][LeftWheel][]
+				<[string8][GeometryList][ Trainarrrouearrgch0 ]>
+				<[uint32][PositionID][LeftGear.R]>
+				<[uint32][OrientationID][LeftGear.Q]>
+				<[uint32][InputID][LeftWheelHull.RotationAngle]>
+                <[tmvector3d][Axis][ -0.0 1.0 -0.0 ]>
+				<[tmvector3d][Pivot][-0.388 1.2559 -1.0991]>
+				<[string8][Graphics][trainArrGch3_0]>
+			>
+			// front gear
+			<[graphics_input][caddy-ercoupe_extInput_4][]
+				<[uint32][InputID][GroundRollLoadFront.Output]>
+				<[float64][Scaling][0.00002]>
+			>
+			<[graphics_linear_interpolation][caddy-ercoupe_extMapping_27][]
+				<[string8][Input][caddy-ercoupe_extInput_4.Output]>
+				<[tmvector2d][Map][ (0 0.0) (0.25 0.0554)]>
+			>
+			<[graphics_translation][caddy-ercoupe_extMoving_27][]
+				<[string8][Input][caddy-ercoupe_extMapping_27.Output]>
+				<[tmvector3d][Axis][0.0 0.0 0.0554]>
+			>
+			<[rigidbodygraphics][trainArrGch2_001_0][]
+				<[string8][GeometryList][ Trainarrgch20010 ]>
+				<[uint32][PositionID][Fuselage.R]>
+				<[uint32][OrientationID][Fuselage.Q]>
+				<[string8][InputTransform][caddy-ercoupe_extMoving_27.Output]>
+			>
+			<[graphics_linear_interpolation][caddy-ercoupe_extMapping_31][]
+				<[string8][Input][caddy-ercoupe_extInput_4.Output]>
+				<[tmvector2d][Map][ (0 0.0) (0.25 0.188997)]>
+			>
+			<[graphics_translation][caddy-ercoupe_extMoving_31][]
+				<[string8][Input][caddy-ercoupe_extMapping_31.Output]>
+				<[tmvector3d][Axis][-0.0495 0.0 0.1824]>
+			>
+			<[rigidbodygraphics][_roulette_jambe_verin_0][]
+				<[string8][GeometryList][ RouletteJambeVerin0 ]>
+				<[uint32][PositionID][Fuselage.R]>
+				<[uint32][OrientationID][Fuselage.Q]>
+				<[string8][InputTransform][caddy-ercoupe_extMoving_31.Output]>
+			>
+			<[graphics_input][caddy-ercoupe_extInput_5][]
+				<[uint32][InputID][ServoSteering.Output]>
+				<[float64][Scaling][33.903]>
+			>
+			<[graphics_linear_interpolation][caddy-ercoupe_extMapping_36][]
+				<[string8][Input][caddy-ercoupe_extInput_5.Output]>
+				<[tmvector2d][Map][(-10 -0.349066) (0 0.0) (10 0.349066)]>
+			>
+			<[hingedbodygraphics][Cube_0][]
+				<[string8][GeometryList][ Cube0 RouletteJambeHaut0 ]>
+				<[uint32][PositionID][Fuselage.R]>
+				<[uint32][OrientationID][Fuselage.Q]>
+				<[string8][Input][caddy-ercoupe_extMapping_36.Output]>
+                <[tmvector3d][Axis][ 0.2588 -0.0 -0.9659 ]>
+				<[tmvector3d][Pivot][1.1292 0.0 -0.3821]>
+			>
+			<[graphics_linear_interpolation][caddy-ercoupe_extMapping_42][]
+				<[string8][Input][caddy-ercoupe_extInput_4.Output]>
+				<[tmvector2d][Map][(0 0.0) (0.25 0.714712)]>
+			>
+			<[hingedbodygraphics][_roulette_amort_ht_0][]
+				<[string8][GeometryList][ RouletteAmortHt0 ]>
+				<[uint32][PositionID][Fuselage.R]>
+				<[uint32][OrientationID][Fuselage.Q]>
+				<[string8][Input][caddy-ercoupe_extMapping_42.Output]>
+                <[tmvector3d][Axis][ -0.0 1.0 -0.0 ]>
+				<[tmvector3d][Pivot][1.1539 0.0 -0.6534]>
+				<[string8][Graphics][Cube_0]>
+			>
+			<[graphics_linear_interpolation][caddy-ercoupe_extMapping_46][]
+				<[string8][Input][caddy-ercoupe_extInput_4.Output]>
+				<[tmvector2d][Map][(0 0.0) (0.25 1.713041)]>
+			>
+			<[hingedbodygraphics][_roulette_amort_bas_0][]
+				<[string8][GeometryList][ RouletteAmortBas0 ]>
+				<[uint32][PositionID][Fuselage.R]>
+				<[uint32][OrientationID][Fuselage.Q]>
+				<[string8][Input][caddy-ercoupe_extMapping_46.Output]>
+                <[tmvector3d][Axis][ -0.0 -1.0 -0.0 ]>
+				<[tmvector3d][Pivot][1.1027 0.0 -0.8415]>
+				<[string8][Graphics][_roulette_amort_ht_0]>
+			>
+			<[graphics_linear_interpolation][caddy-ercoupe_extMapping_50][]
+				<[string8][Input][caddy-ercoupe_extInput_4.Output]>
+				<[tmvector2d][Map][(0 0.0) (0.25 1.004437)]>
+			>
+			<[hingedbodygraphics][_roulette_etrier_0][]
+				<[string8][GeometryList][ RouletteEtrier0 ]>
+				<[uint32][PositionID][Fuselage.R]>
+				<[uint32][OrientationID][Fuselage.Q]>
+				<[string8][Input][caddy-ercoupe_extMapping_50.Output]>
+                <[tmvector3d][Axis][ -0.0 1.0 -0.0 ]>
+				<[tmvector3d][Pivot][1.2365 0.0 -0.9658]>
+				<[string8][Graphics][_roulette_amort_bas_0]>
+			>
+			<[hingedbodygraphics][FrontWheel][]
+				<[string8][GeometryList][ Roulette0 ]>
+				<[uint32][PositionID][FrontGear.R]>
+				<[uint32][OrientationID][FrontGear.Q]>
+				<[uint32][InputID][FrontWheelHull.RotationAngle]>
+                <[tmvector3d][Axis][ -0.0 1.0 -0.0 ]>
+				<[tmvector3d][Pivot][1.3174 0.0 -1.1525]>
+				<[string8][Graphics][_roulette_etrier_0]>
+			>
+        >
+    >
+>
+
+
+
+
+
+
+
+
