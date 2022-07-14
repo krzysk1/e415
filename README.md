@@ -1,9 +1,9 @@
 # e415
-Ercoupe 415-Caddy
+Ercoupe 415-Caddy Float Ski
 
 The ERCO Ercoupe is a low-wing monoplane aircraft that was designed and built in the United States. It was first manufactured by the Engineering and Research Corporation (ERCO) shortly before World War II;
 
-Aerofly FS 2 aircraft made by Krzysztof Kaniewski. Flight Model, systems and animations by Arno54, 3D model by Khamsin (http://xpfr.org/).
+Aerofly FS 4 aircraft made by Krzysztof Kaniewski. Flight Model, systems and animations by Arno54, 3D model by Khamsin (http://xpfr.org/).
 
 
  Some features may not work as intended and this aircraft could crash your Aerofly FS2. 
