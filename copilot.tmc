@@ -10,6 +10,9 @@
         <[float64][PatternSpeed][36.6]>
         <[float64][InitialClimbSpeed][27.04]>
         <[string8][AutoPilotType][BASIC]>
+        <[int][EngineCount][1]>
+        <[bool][Piston][true]>
+        <[bool][GeneralAviation][true]>	
         <[bool][ParkingBrake][true]>
         <[bool][RudderTrimRequired][true]>
         <[float64][PitchTrimTakeOff][-0.18]>
