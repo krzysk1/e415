@@ -17,13 +17,7 @@
                 <[float64][Kd][2500.0]>
                 <[float64][InitialVelocity][0.0]>
                 <[uint32][Type][1]>
-            >
-		 // <[collisionhull][CollisionLeftGear][]
-		  // <[string8][Body][LeftGear]>
-		 // <[string8][Geometry][Trainarrgch30]>
-		 // <[float64][K][1940000]>	
-		 // <[float64][D][29100]>
-		 // >			
+            >	
 			<[wheel][LeftWheelHull][]
 				<[float64][K][78800]>
 				<[float64][D][591]>
@@ -59,9 +53,9 @@
 				<[float64][Dfx][184.292]>
 				<[float64][Dfy][184.292]>
 				<[float64][Dfz][184.292]>
-				<[float64][Ktx][18400.0]>
-				<[float64][Kty][18400.0]>
-				<[float64][Ktz][18400.0]>
+				<[float64][Ktx][1840.0]>
+				<[float64][Kty][1840.0]>
+				<[float64][Ktz][1840.0]>
 				<[float64][Dtx][36.8]>
 				<[float64][Dty][36.8]>
 				<[float64][Dtz][36.8]>
@@ -105,13 +99,7 @@
                 <[float64][Kd][2500.0]>
                 <[float64][InitialVelocity][0.0]>
                 <[uint32][Type][1]>
-            >
-		 // <[collisionhull][CollisionRightGear][]
-		  // <[string8][Body][RightGear]>
-		 // <[string8][Geometry][Trainarrdte30]>
-		 // <[float64][K][1940000]>
-		 // <[float64][D][29100]>
-		 // >			
+            >		
 			<[wheel][RightWheelHull][]
 				<[float64][K][78800]>
 				<[float64][D][591]>

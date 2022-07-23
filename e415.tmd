@@ -69,10 +69,10 @@
             <[multibody_joint][JointFuselageLeftWing][]
                 <[string8][Body0][Fuselage]>
                 <[string8][Body1][LeftWing]>
-				<[tmvector3d][R0][ -0.067839 0.0 -0.609601 ]>
+				<[tmvector3d][R0][ -0.067839 -0.4594 -0.609601 ]>
                 <[tmvector3d][X0][ 1.0 0.0 0.0 ]>
                 <[float64][Kp][500000]>
-                <[float64][Kd][10000]>
+                <[float64][Kd][1000]>
                 <[uint32][Type][0]>
             >			
 			<[rigidbody][RightWing][]
@@ -84,10 +84,10 @@
             <[multibody_joint][JointFuselageRightWing][]
                 <[string8][Body0][Fuselage]>
                 <[string8][Body1][RightWing]>
-				<[tmvector3d][R0][ -0.067839 0.0 -0.609601 ]>
+				<[tmvector3d][R0][ -0.067839 -0.4594 -0.609601 ]>
                 <[tmvector3d][X0][ 1.0 0.0 0.0 ]>
                 <[float64][Kp][500000]>
-                <[float64][Kd][10000]>
+                <[float64][Kd][1000]>
                 <[uint32][Type][0]>
             >
 			<[collisionhull][CollisionFuselage][]
@@ -730,12 +730,12 @@
 
             // starter
             <[input_button][ButtonStarter][]
-                <[string8][Message][Controls.Starter]>
+                <[string8][Message][Controls.Starter1]>
                 <[string8][Events][ ButtonSound.Trigger ]>
                 <[string8][EventsRelease][ ButtonSound.Trigger ]>
             >
             <[input_active][StarterButtonPushed][]
-                <[string8][Message][Controls.Starter]>
+                <[string8][Message][Controls.Starter1]>
             >
             <[output_free][StarterButtonPushedOutput][]
                 <[string8][Input][StarterButtonPushed.Output]>
