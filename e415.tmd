@@ -1356,33 +1356,87 @@
 			<[graphics_input][NavigationLights][]
 				<[uint32][InputID][NavigationLights.Output]>
 			>
-			<[graphics_pointlight][airplane_nav_left][]
+			<[graphics_pointlight][LeftWingTipLight][]
 				<[uint32][PositionID][Fuselage.R]>
 				<[uint32][OrientationID][Fuselage.Q]>
 				<[tmvector3d][R0][-0.028 4.66 0.078]>
-				<[tmvector3d][X0][ 0.7 0.7 0.0 ]>
-				<[tmvector3d][Color][ 1.0 0.3 0.1 1.0 ]>
-				<[float64][Brightness][ 3.0 ]>
+                <[tmvector3d][X0][ 0.7 0.7 0.0 ]>
+                <[tmvector3d][Color][ 1.0 0.3 0.1 1.0 ]>
+                <[float64][Brightness][ 8.0 ]>
 				<[string8][InputModulation][NavigationLights.Output]>
 			>
-			<[graphics_pointlight][airplane_nav_right][]
+            <[graphics_conelight][LeftWingTipLightCone][]
+				<[uint32][PositionID][Fuselage.R]>
+				<[uint32][OrientationID][Fuselage.Q]>
+				<[tmvector3d][R0][-0.028 4.66 0.078]>
+                <[tmvector3d][X0][ 0.7 0.7 0.0 ]>
+                <[tmvector3d][Color][ 1.0 0.3 0.1 1.0 ]>
+                <[float64][Brightness][ 0.1 ]>
+                <[float64][ConeCenter][1.0]>
+                <[float64][ConeCutoff][-0.91]>
+                <[string8][InputModulation][NavigationLights.Output]>
+                <[float64][Size][40.0]>
+                <[float64][Falloff][8.0]>
+            >
+            <[graphics_conelight][LeftWingTipLightGlow][]
+				<[uint32][PositionID][Fuselage.R]>
+				<[uint32][OrientationID][Fuselage.Q]>
+				<[tmvector3d][R0][-0.028 4.66 0.078]>
+                <[tmvector3d][X0][ 1.0 0.1 0.0 ]>
+                <[tmvector3d][Color][ 1.0 0.3 0.1 1.0 ]>
+                <[float64][Brightness][ 0.5 ]>
+                <[float64][ConeCenter][-0.89]>
+                <[float64][ConeCutoff][-0.99]>
+				<[string8][InputModulation][NavigationLights.Output]>
+                <[float64][Size][1.0]>
+                <[float64][Falloff][8.0]>
+            >
+			<[graphics_pointlight][RightWingTipLight][]
 				<[uint32][PositionID][Fuselage.R]>
 				<[uint32][OrientationID][Fuselage.Q]>
 				<[tmvector3d][R0][-0.028 -4.66 0.078]>
-				<[tmvector3d][X0][ 0.7 -0.7 0.0 ]>
-				<[tmvector3d][Color][ 0.2 0.7 0.1 1.0 ]>
-				<[float64][Brightness][3.0 ]>
+                <[tmvector3d][X0][ 0.7 -0.7 0.0 ]>
+                <[tmvector3d][Color][ 0.2 0.7 0.1 1.0 ]>
+                <[float64][Brightness][ 8.0 ]>
 				<[string8][InputModulation][NavigationLights.Output]>
 			>
-			<[graphics_pointlight][airplane_nav_tail][]
+            <[graphics_conelight][RightWingTipLightCone][]
+				<[uint32][PositionID][Fuselage.R]>
+				<[uint32][OrientationID][Fuselage.Q]>
+				<[tmvector3d][R0][-0.028 -4.66 0.078]>
+                <[tmvector3d][X0][ 0.7 -0.7 0.0 ]>
+                <[tmvector3d][Color][ 0.2 0.7 0.1 1.0 ]>
+                <[float64][Brightness][ 0.1 ]>
+                <[float64][ConeCenter][1.0]>
+                <[float64][ConeCutoff][0.0]>
+				<[string8][InputModulation][NavigationLights.Output]>
+                <[float64][Size][40.0]>
+                <[float64][Falloff][8.0]>
+            >
+			<[graphics_pointlight][TailLight][]
 				<[uint32][PositionID][Fuselage.R]>
 				<[uint32][OrientationID][Fuselage.Q]>
 				<[tmvector3d][R0][-4.52 0.0 -0.0373]>
-				<[tmvector3d][X0][ -0.7 0.0 0.0 ]>
-				<[tmvector3d][Color][ 0.7 0.7 1.0 1.0 ]>
-				<[float64][Brightness][ 3.0 ]>
+                <[tmvector3d][X0][ -1.0 0.0 0.0 ]>
+                <[tmvector3d][Color][ 1.0 1.0 1.0 1.0 ]>
+                <[float64][Brightness][6.0]>
+                <[float64][ConeCenter][0.2]>
+                <[float64][ConeCutoff][-0.2]>
 				<[string8][InputModulation][NavigationLights.Output]>
 			>
+            <[graphics_conelight][TailLightCone][]
+				<[uint32][PositionID][Fuselage.R]>
+				<[uint32][OrientationID][Fuselage.Q]>
+				<[tmvector3d][R0][-4.52 0.0 -0.0373]>
+                <[tmvector3d][X0][ -1.0 0.0 0.0 ]>
+                <[tmvector3d][Color][ 1.0 0.8 0.6 1.0 ]>
+                <[float64][Brightness][ 0.1 ]>
+                <[float64][ConeCenter][0.5]>
+                <[float64][ConeCutoff][-0.5]>
+                <[string8][InputModulation][NavigationLights.Output]>
+                <[float64][Size][40.0]>
+                <[float64][Falloff][8.0]>
+            >
 			<[graphics_input][LandingLights][]
 				<[uint32][InputID][LandingLights.Output]>
 			>
@@ -1390,14 +1444,40 @@
 				<[uint32][PositionID][Fuselage.R]>
 				<[uint32][OrientationID][Fuselage.Q]>
 				<[tmvector3d][R0][0.04 -1.1088 -0.6555 ]>
-				<[tmvector3d][X0][ 0.9 0.0 -0.1 ]>
-				<[float64][ConeCenter][0.9]>
-				<[float64][ConeCutoff][0.7]>
-				<[float64][Size][0.1]>
-				<[tmvector3d][Color][ 1.0 0.9 0.8 1.0 ]>
-				<[float64][Brightness][8.0]>
+                <[tmvector3d][X0][ 1.0 0.0 0.0 ]>
+                <[float64][ConeCenter][1.0]>
+                <[float64][ConeCutoff][0.75]>
+                <[float64][Size][0.059]>
+                <[tmvector3d][Color][ 1.0 0.8 0.7 1.0 ]>
+                <[float64][Brightness][60.0]>
 				<[string8][InputModulation][LandingLights.Output]>
 			>
+            <[graphics_conelight][LandingLightCone][]
+				<[uint32][PositionID][Fuselage.R]>
+				<[uint32][OrientationID][Fuselage.Q]>
+				<[tmvector3d][R0][0.04 -1.1088 -0.6555 ]>
+                <[tmvector3d][X0][ 1.0 0.0 -0.1 ]>
+                <[tmvector3d][Color][ 1.0 0.8 0.6 1.0 ]>
+                <[float64][Brightness][20.0]>
+                <[float64][ConeCenter][1.0]>
+                <[float64][ConeCutoff][0.9]>
+				<[string8][InputModulation][LandingLights.Output]>
+                <[float64][Size][300.0]>
+                <[float64][Falloff][8.0]>
+            >
+            <[graphics_conelight][LandingLightWideCone][]
+				<[uint32][PositionID][Fuselage.R]>
+				<[uint32][OrientationID][Fuselage.Q]>
+				<[tmvector3d][R0][0.04 -1.1088 -0.6555 ]>
+                <[tmvector3d][X0][ 1.0 0.0 -0.1 ]>
+                <[tmvector3d][Color][ 1.0 0.8 0.6 1.0 ]>
+                <[float64][Brightness][4.0]>
+                <[float64][ConeCenter][1.0]>
+                <[float64][ConeCutoff][-0.8]>
+				<[string8][InputModulation][LandingLights.Output]>
+                <[float64][Size][30.0]>
+                <[float64][Falloff][8.0]>
+            >
 
 		// E415-Caddy_cockpit
 
