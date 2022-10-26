@@ -24,7 +24,6 @@
 				<[float64][Radius][0.204216]>
 				<[string8][Body][LeftGear]>
 				<[tmvector3d][R0][-0.387881 1.249680 -1.113480]>
-				<[tmvector3d][X0][ 1.0 0.0 0.0 ]>
                 <[string8][InputBrake][0.2]>
                 <[float64][BrakeStrength][0.2]>
                 <[string8][Stiffness][14.0]>
@@ -68,7 +67,6 @@
 				<[float64][Radius][0.152400]>
 				<[string8][Body][FrontGear]>
 				<[tmvector3d][R0][1.312904 0.0 -1.182624]>
-				<[tmvector3d][X0][ 1.0 0.0 0.0 ]>
                 <[string8][InputBrake][0.2]>
                 <[float64][BrakeStrength][0.2]>
                 <[string8][Stiffness][14.0]>
@@ -102,7 +100,6 @@
 				<[float64][Radius][0.204216]>
 				<[string8][Body][RightGear]>
 				<[tmvector3d][R0][-0.387881 -1.249680 -1.113480]>
-				<[tmvector3d][X0][ 1.0 0.0 0.0 ]>
                 <[string8][InputBrake][0.2]>
                 <[float64][BrakeStrength][0.2]>
                 <[string8][Stiffness][14.0]>

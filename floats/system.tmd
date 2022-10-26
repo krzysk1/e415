@@ -24,7 +24,6 @@
 				<[float64][Radius][0.1524]>
 				<[string8][Body][LeftGear]>
 				<[tmvector3d][R0][-0.387881 1.249680 -1.110]>
-				<[tmvector3d][X0][ 1.0 0.0 0.0 ]>
                 <[string8][InputBrake][0.2]>
                 <[float64][BrakeStrength][0.2]>
 			>
@@ -68,7 +67,6 @@
 				<[float64][Radius][0.1524]>
 				<[string8][Body][FrontGear]>
 				<[tmvector3d][R0][1.312904 0.0 -1.182624]>
-				<[tmvector3d][X0][ 1.0 0.0 0.0 ]>
 			>
 			<[output][GroundRollSpeedFront][]
 				<[string8][Input][FrontWheelHull.Speed]>
@@ -100,7 +98,6 @@
 				<[float64][Radius][0.1524]>
 				<[string8][Body][RightGear]>
 				<[tmvector3d][R0][-0.387881 -1.249680 -1.110]>
-				<[tmvector3d][X0][ 1.0 0.0 0.0 ]>
                 <[string8][InputBrake][0.2]>
                 <[float64][BrakeStrength][0.2]>
 			>

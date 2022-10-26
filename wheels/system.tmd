@@ -27,7 +27,6 @@
                 <[float64][Inflation][284738.0]>					
 				<[string8][Body][LeftGear]>
 				<[tmvector3d][R0][-0.388 1.2559 -1.0991]>
-				<[tmvector3d][X0][ 1.0 0.0 0.0 ]>
                 <[string8][InputBrake][LeftBrake.Output]>
                 <[float64][BrakeStrength][0.55]>				
 			>
@@ -74,7 +73,6 @@
                 <[float64][Inflation][204738.0]>				
 				<[string8][Body][FrontGear]>
 				<[tmvector3d][R0][1.3174 0.0 -1.1525]>
-				<[tmvector3d][X0][ 1.0 0.0 0.0 ]>
 			>
 			<[output][GroundRollSpeedFront][]
 				<[string8][Input][FrontWheelHull.Speed]>
@@ -109,7 +107,6 @@
                 <[float64][Inflation][284738.0]>			
 				<[string8][Body][RightGear]>
 				<[tmvector3d][R0][-0.388 -1.2559 -1.0991]>
-				<[tmvector3d][X0][ 1.0 0.0 0.0 ]>
                 <[string8][InputBrake][LeftBrake.Output]>
                 <[float64][BrakeStrength][0.55]>				
 			>
