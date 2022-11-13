@@ -21,6 +21,8 @@
         <[float64][RudderGain][2.0]>
         <[float64][RudderCrossWind][1.5]>
         <[float64][RudderTakeOff][0.05]>
+        <[float64][GainSideSlipRoll][2.0]>
+        <[float64][StarterMaximumTime][3.0]>
         <[float64][FlareHeightScaling][0.5]>
         <[float64][FlareExpectedNoseDrop][0.2]>
     >

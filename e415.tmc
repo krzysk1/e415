@@ -9,15 +9,19 @@
             <[localized_text][][]
                 <[string8][Language][en]>
                 <[string8][Text][The ERCO Ercoupe is a low-wing monoplane aircraft that was designed and built in the United States. It was first manufactured by the Engineering and Research Corporation (ERCO) shortly before World War II; several other manufacturers continued its production after the war. Lacking rudder pedals, the Ercoupe was flown using only the control wheel. Aerofly FS 4 aircraft made by Krzysk, flight Model, systems and animations by Arno54, 3D model by Khamsin.]>
+            >
+            <[localized_text][][]
+                <[string8][Language][de]>
+                <[string8][Text][Die ERCO Ercoupe war ein zweisitziges, leichtes Sport- und Schulflugzeug des US-amerikanischen Herstellers Engineering and Research Corporation. Konstrukteur war Fred Weick, der mit einer stark vereinfachten Flugsteuerung unkontrollierbare Flugzustände, wie Überziehen und Trudeln, verhindern wollte. Für Aerofly FS4 von Krzysk. 3d-Modell erstellt von Arno54 und Khamsin.]>
 			>
         >
-		<[float64][WingSpan][9.14]>		
+		<[float64][WingSpan][9.14]>
 		<[float64][MaximumAirspeed][48.0]>
-		<[float64][MaximumSpeed][48.0]>		
-		<[float64][MinimumAirspeed][21.0]>	
+		<[float64][MaximumSpeed][48.0]>
+		<[float64][MinimumAirspeed][21.0]>
         <[float64][ApproachAirspeed][23.3]>
         <[float64][CruiseAirspeed][41.5]>
-        <[float64][CruiseSpeed][63.5]>		
+        <[float64][CruiseSpeed][63.5]>
 		<[tmvector2d][NormalAirspeedRange][ 21.0 48.0 ]>
 		<[tmvector2d][CautionAirspeedRange][ 48.0 62.5 ]>
 		<[tmvector2d][FlapAirspeedRange][ 0.0 0.0 ]>
