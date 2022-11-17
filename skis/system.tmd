@@ -1,285 +1,305 @@
 <[file][][]
     <[modelmanager][][]
         <[pointer_list_tmgraphics][DynamicObjects][]
+
+            //  Skids Cross-country version on skids, 85hp engine and automatic variable-pitch propeller
+
+            <[engine2][Engine][]
+                <[string8][InputThrottle][ThrottleLever.Output]>
+                <[string8][InputMixture][MixtureLever.Output]>
+                <[string8][InputLeftMagneto][LeftMagneto.Output]>
+                <[string8][InputRightMagneto][RightMagneto.Output]>
+                <[string8][RotationSpeed][DriveShaft.RotationSpeed]>
+                <[string8][InputAngle][PropellerJoint.Output]>
+                <[float64][RotationInertia][1.1776]>
+                <[float64][ThrottleIdle][0.1]>
+                <[string8][AddTorque][DriveShaft.AddTorque]>
+                <[string8][AddInertia][DriveShaft.AddInertia]>
+                <[float64][Friction][50.0]>
+                <[float64][RatedRotationSpeed][257.5]>
+                <[float64][RatedPower][63384]>
+                <[float64][Displacement][0.0031]>
+            >
+
             // left main gear
-			<[rigidbody][LeftGear][]
-				<[float64][Mass][10.3]>
-				<[tmvector3d][InertiaLength][ 0.408432 0.1524 0.813816 ]>
-				<[tmvector3d][R0][-0.387881 1.249680 -0.868680]>
-				<[tmmatrix3d][B0][1.0 0.0 0.0 0.0 1.0 0.0 0.0 0.0 1.0]>
-			>
+            <[rigidbody][LeftGear][]
+                <[float64][Mass][10.3]>
+                <[tmvector3d][InertiaLength][ 0.408432 0.1524 0.813816 ]>
+                <[tmvector3d][R0][-0.387881 1.249680 -0.868680]>
+                <[tmmatrix3d][B0][1.0 0.0 0.0 0.0 1.0 0.0 0.0 0.0 1.0]>
+            >
             <[multibody_joint][JointLeftWingLeftGear][]
                 <[string8][Body0][LeftWing]>
                 <[string8][Body1][LeftGear]>
                 <[tmvector3d][X0][ 0.0 0.0 1.0 ]>
-   				<[tmvector3d][R0][ -0.387881 1.249680 -0.563880 ]>
+                   <[tmvector3d][R0][ -0.387881 1.249680 -0.563880 ]>
                 <[float64][Kp][100000.0]>
                 <[float64][Kd][2500.0]>
                 <[float64][InitialVelocity][0.0]>
                 <[uint32][Type][1]>
             >
-			<[wheel][LeftWheelHull][]
-				<[float64][K][78800]>
-				<[float64][D][591]>
-				<[float64][Radius][0.204216]>
-				<[string8][Body][LeftGear]>
-				<[tmvector3d][R0][-0.387881 1.249680 -1.113480]>
+            <[wheel][LeftWheelHull][]
+                <[float64][K][78800]>
+                <[float64][D][591]>
+                <[float64][Radius][0.204216]>
+                <[string8][Body][LeftGear]>
+                <[tmvector3d][R0][-0.387881 1.249680 -1.113480]>
                 <[string8][InputBrake][0.2]>
                 <[float64][BrakeStrength][0.2]>
                 <[string8][Stiffness][14.0]>
-			>
-			<[output][GroundRollSpeedLeft][]
-				<[string8][Input][LeftWheelHull.Speed]>
-			>
-			<[output][GroundRollLoadLeft][]
-				<[string8][Input][LeftWheelHull.Load]>
-			>
+            >
+            <[output][GroundRollSpeedLeft][]
+                <[string8][Input][LeftWheelHull.Speed]>
+            >
+            <[output][GroundRollLoadLeft][]
+                <[string8][Input][LeftWheelHull.Load]>
+            >
             // nose gear
-			<[rigidbody][FrontGear][]
-				<[float64][Mass][6.1]>
-				<[tmvector3d][InertiaLength][ 0.3048 0.121920 0.9176 ]>
-				<[tmvector3d][R0][1.312904 0.0 -0.8409]>
-				<[tmmatrix3d][B0][0.984808 0.0 0.173648 0.0 1.0 0.0 -0.173648 0.0 0.984808]>
-			>
-			<[jointlinear][JointFuselageFrontGear][]
-				<[tmvector3d][R0][ 1.1292 0.0  -0.3821 ]>
-				<[float64][Kfx][92000.0]>
-				<[float64][Kfy][92000.0]>
-				<[float64][Kfz][46000.0]>
-				<[float64][Dfx][184.292]>
-				<[float64][Dfy][184.292]>
-				<[float64][Dfz][184.292]>
-				<[float64][Ktx][1840.0]>
-				<[float64][Kty][1840.0]>
-				<[float64][Ktz][1840.0]>
-				<[float64][Dtx][36.8]>
-				<[float64][Dty][36.8]>
-				<[float64][Dtz][36.8]>
-				<[string8][Body0][Fuselage]>
-				<[string8][Body1][FrontGear]>
-				<[string8][Rotation1Control][ServoSteering.Output]>
-				<[tmvector3d][Rotation1Axis][ -0.173648 0.0 -0.984808 ]>
-				<[float64][Rotation1Angle][1.0]>
-			>
-			<[wheel][FrontWheelHull][]
-				<[float64][K][36800]>
-				<[float64][D][276]>
-				<[float64][Radius][0.152400]>
-				<[string8][Body][FrontGear]>
-				<[tmvector3d][R0][1.312904 0.0 -1.182624]>
+            <[rigidbody][FrontGear][]
+                <[float64][Mass][6.1]>
+                <[tmvector3d][InertiaLength][ 0.3048 0.121920 0.9176 ]>
+                <[tmvector3d][R0][1.312904 0.0 -0.8409]>
+                <[tmmatrix3d][B0][0.984808 0.0 0.173648 0.0 1.0 0.0 -0.173648 0.0 0.984808]>
+            >
+            <[jointlinear][JointFuselageFrontGear][]
+                <[tmvector3d][R0][ 1.1292 0.0  -0.3821 ]>
+                <[float64][Kfx][92000.0]>
+                <[float64][Kfy][92000.0]>
+                <[float64][Kfz][46000.0]>
+                <[float64][Dfx][184.292]>
+                <[float64][Dfy][184.292]>
+                <[float64][Dfz][184.292]>
+                <[float64][Ktx][1840.0]>
+                <[float64][Kty][1840.0]>
+                <[float64][Ktz][1840.0]>
+                <[float64][Dtx][36.8]>
+                <[float64][Dty][36.8]>
+                <[float64][Dtz][36.8]>
+                <[string8][Body0][Fuselage]>
+                <[string8][Body1][FrontGear]>
+                <[string8][Rotation1Control][ServoSteering.Output]>
+                <[tmvector3d][Rotation1Axis][ -0.173648 0.0 -0.984808 ]>
+                <[float64][Rotation1Angle][1.0]>
+            >
+            <[wheel][FrontWheelHull][]
+                <[float64][K][36800]>
+                <[float64][D][276]>
+                <[float64][Radius][0.152400]>
+                <[string8][Body][FrontGear]>
+                <[tmvector3d][R0][1.312904 0.0 -1.182624]>
                 <[string8][InputBrake][0.2]>
                 <[float64][BrakeStrength][0.2]>
                 <[string8][Stiffness][14.0]>
-			>
-			<[output][GroundRollSpeedFront][]
-				<[string8][Input][FrontWheelHull.Speed]>
-			>
-			<[output][GroundRollLoadFront][]
-				<[string8][Input][FrontWheelHull.Load]>
-			>
+            >
+            <[output][GroundRollSpeedFront][]
+                <[string8][Input][FrontWheelHull.Speed]>
+            >
+            <[output][GroundRollLoadFront][]
+                <[string8][Input][FrontWheelHull.Load]>
+            >
             // right main gear
-			<[rigidbody][RightGear][]
-				<[float64][Mass][10.3]>
-				<[tmvector3d][InertiaLength][ 0.408432 0.1524 0.813816 ]>
-				<[tmvector3d][R0][-0.387881 -1.249680 -0.868680]>
-				<[tmmatrix3d][B0][1.0 0.0 0.0 0.0 1.0 0.0 0.0 0.0 1.0]>
-			>
+            <[rigidbody][RightGear][]
+                <[float64][Mass][10.3]>
+                <[tmvector3d][InertiaLength][ 0.408432 0.1524 0.813816 ]>
+                <[tmvector3d][R0][-0.387881 -1.249680 -0.868680]>
+                <[tmmatrix3d][B0][1.0 0.0 0.0 0.0 1.0 0.0 0.0 0.0 1.0]>
+            >
             <[multibody_joint][JointRightWingRightGear][]
                 <[string8][Body0][RightWing]>
                 <[string8][Body1][RightGear]>
                 <[tmvector3d][X0]    [ 0.0 0.0 1.0 ]>
-				<[tmvector3d][R0][ -0.387881 -1.249680 -0.563880 ]>
+                <[tmvector3d][R0][ -0.387881 -1.249680 -0.563880 ]>
                 <[float64][Kp][100000.0]>
                 <[float64][Kd][2500.0]>
                 <[float64][InitialVelocity][0.0]>
                 <[uint32][Type][1]>
             >
-			<[wheel][RightWheelHull][]
-				<[float64][K][78800]>
-				<[float64][D][591]>
-				<[float64][Radius][0.204216]>
-				<[string8][Body][RightGear]>
-				<[tmvector3d][R0][-0.387881 -1.249680 -1.113480]>
+            <[wheel][RightWheelHull][]
+                <[float64][K][78800]>
+                <[float64][D][591]>
+                <[float64][Radius][0.204216]>
+                <[string8][Body][RightGear]>
+                <[tmvector3d][R0][-0.387881 -1.249680 -1.113480]>
                 <[string8][InputBrake][0.2]>
                 <[float64][BrakeStrength][0.2]>
                 <[string8][Stiffness][14.0]>
-			>
-			<[output][GroundRollSpeedRight][]
-				<[string8][Input][RightWheelHull.Speed]>
-			>
-			<[output][GroundRollLoadRight][]
-				<[string8][Input][RightWheelHull.Load]>
-			>
+            >
+            <[output][GroundRollSpeedRight][]
+                <[string8][Input][RightWheelHull.Speed]>
+            >
+            <[output][GroundRollLoadRight][]
+                <[string8][Input][RightWheelHull.Load]>
+            >
         >
         <[pointer_list_tmgraphics][GraphicObjects][]
-			// skids-ercoupe_ext
-			<[rigidbodygraphics][trainCarenage_15][]
-				<[string8][GeometryList][ SkidsErcoupeExt15 Traincarenage15 ]>
-				<[uint32][PositionID][Fuselage.R]>
-				<[uint32][OrientationID][Fuselage.Q]>
-			>
-			// right skid
-			<[graphics_input][skids-ercoupe_extInput_0][]
-				<[uint32][InputID][GroundRollLoadRight.Output]>
-				<[float64][Scaling][0.00005]>
-			>
-			<[graphics_linear_interpolation][skids-ercoupe_extMapping_761][]
-				<[string8][Input][skids-ercoupe_extInput_0.Output]>
-				<[tmvector2d][Map][(0 0.0) (0.25 0.344353)]>
-			>
-			<[hingedbodygraphics][trainArrDte3_15][]
-				<[string8][GeometryList][ Trainarrdte315 ]>
-				<[uint32][PositionID][Fuselage.R]>
-				<[uint32][OrientationID][Fuselage.Q]>
-				<[string8][Input][skids-ercoupe_extMapping_761.Output]>
-				<[tmvector3d][Axis][0.0 -1.0 0.0]>
-				<[tmvector3d][Pivot][-0.089400 -1.108000 -0.807100]>
-			>
-			<[graphics_linear_interpolation][skids-ercoupe_extMapping_765][]
-				<[string8][Input][skids-ercoupe_extInput_0.Output]>
-				<[tmvector2d][Map][(0 0.0) (0.25 0.345924)]>
-			>
-			<[hingedbodygraphics][_skiArrDte_15][]
-				<[string8][GeometryList][ Skiarrdte15 ]>
-				<[uint32][PositionID][Fuselage.R]>
-				<[uint32][OrientationID][Fuselage.Q]>
-				<[string8][Input][skids-ercoupe_extMapping_765.Output]>
-				<[tmvector3d][Axis][0.0 1.0 0.0]>
-				<[tmvector3d][Pivot][-0.388000 -1.256200 -1.099100]>
-				<[string8][Graphics][trainArrDte3_15]>
-			>
-			<[graphics_linear_interpolation][skids-ercoupe_extMapping_770][]
-				<[string8][Input][skids-ercoupe_extInput_0.Output]>
-				<[tmvector2d][Map][ (0 0.0) (0.25 0.057900)]>
-			>
-			<[graphics_translation][skids-ercoupe_extMoving_770][]
-				<[string8][Input][skids-ercoupe_extMapping_770.Output]>
-				<[tmvector3d][Axis][0.0 0.0 0.057900]>
-			>
-			<[rigidbodygraphics][_trainArrDte2_001_15][]
-				<[string8][GeometryList][ Trainarrdte200115 ]>	
-				<[uint32][PositionID][Fuselage.R]>
-				<[uint32][OrientationID][Fuselage.Q]>
-				<[string8][InputTransform][skids-ercoupe_extMoving_770.Output]>
-			>
-			// left skid
-			<[graphics_input][skids-ercoupe_extInput_1][]
-				<[uint32][InputID][GroundRollLoadLeft.Output]>
-				<[float64][Scaling][0.00005]>
-			>
-			<[graphics_linear_interpolation][skids-ercoupe_extMapping_775][]
-				<[string8][Input][skids-ercoupe_extInput_1.Output]>
-				<[tmvector2d][Map][(0 0.0) (0.25 0.324806)]>
-			>
-			<[hingedbodygraphics][trainArrGch3_15][]
-				<[string8][GeometryList][ Trainarrgch315 ]>
-				<[uint32][PositionID][Fuselage.R]>
-				<[uint32][OrientationID][Fuselage.Q]>
-				<[string8][Input][skids-ercoupe_extMapping_775.Output]>
-				<[tmvector3d][Axis][0.0 -1.0 0.0]>
-				<[tmvector3d][Pivot][-0.089400 1.107700 -0.807100]>
-			>
-			<[graphics_linear_interpolation][skids-ercoupe_extMapping_779][]
-				<[string8][Input][skids-ercoupe_extInput_1.Output]>
-				<[tmvector2d][Map][(0 0.0) (0.25 0.324980)]>
-			>
-			<[hingedbodygraphics][_skiArrGch_15][]
-				<[string8][GeometryList][ Skiarrgch15 ]>
-				<[uint32][PositionID][Fuselage.R]>
-				<[uint32][OrientationID][Fuselage.Q]>
-				<[string8][Input][skids-ercoupe_extMapping_779.Output]>
-				<[tmvector3d][Axis][0.0 1.0 0.0]>
-				<[tmvector3d][Pivot][-0.388000 1.255900 -1.099100]>
-				<[string8][Graphics][trainArrGch3_15]>
-			>
-			// front skid
-			<[graphics_input][skids-ercoupe_extInput_2][]
-				<[uint32][InputID][GroundRollLoadFront.Output]>
-				<[float64][Scaling][0.00002]>
-			>
-			<[graphics_linear_interpolation][skids-ercoupe_extMapping_784][]
-				<[string8][Input][skids-ercoupe_extInput_2.Output]>
-				<[tmvector2d][Map][ (0 0.0) (0.25 0.055400)]>
-			>
-			<[graphics_translation][skids-ercoupe_extMoving_784][]
-				<[string8][Input][skids-ercoupe_extMapping_784.Output]>
-				<[tmvector3d][Axis][0.0 0.0 0.055400]>
-			>
-			<[rigidbodygraphics][trainArrGch2_001_15][]
-				<[string8][GeometryList][ Trainarrgch200115 ]>
-				<[uint32][PositionID][Fuselage.R]>
-				<[uint32][OrientationID][Fuselage.Q]>
-				<[string8][InputTransform][skids-ercoupe_extMoving_784.Output]>
-			>
-			<[graphics_linear_interpolation][skids-ercoupe_extMapping_788][]
-				<[string8][Input][skids-ercoupe_extInput_2.Output]>
-				<[tmvector2d][Map][ (0 0.0) (0.25 0.188997)]>
-			>
-			<[graphics_translation][skids-ercoupe_extMoving_788][]
-				<[string8][Input][skids-ercoupe_extMapping_788.Output]>
-				<[tmvector3d][Axis][-0.049500 0.0 0.182400]>
-			>
-			<[rigidbodygraphics][_roulette_jambe_verin_15][]
-				<[string8][GeometryList][ RouletteJambeVerin15 ]>
-				<[uint32][PositionID][Fuselage.R]>
-				<[uint32][OrientationID][Fuselage.Q]>
-				<[string8][InputTransform][skids-ercoupe_extMoving_788.Output]>
-			>
-			<[graphics_input][skids-ercoupe_extInput_3][]
-				<[uint32][InputID][ServoSteering.Output]>
-				<[float64][Scaling][50]>
-			>
-			<[graphics_linear_interpolation][skids-ercoupe_extMapping_793][]
-				<[string8][Input][skids-ercoupe_extInput_3.Output]>
-				<[tmvector2d][Map][(-15 -0.349066) (0 0.0) (15 0.349066)]>
-			>
-			<[hingedbodygraphics][Cube_15][]
-				<[string8][GeometryList][ Cube15 RouletteJambeHaut15 ]>
-				<[uint32][PositionID][Fuselage.R]>
-				<[uint32][OrientationID][Fuselage.Q]>
-				<[string8][Input][skids-ercoupe_extMapping_793.Output]>
-				<[tmvector3d][Axis][-0.258800 0.0 0.965900]>
-				<[tmvector3d][Pivot][1.129200 0.0 -0.382100]>
-			>
-			<[graphics_linear_interpolation][skids-ercoupe_extMapping_799][]
-				<[string8][Input][skids-ercoupe_extInput_2.Output]>
-				<[tmvector2d][Map][(0 0.0) (0.25 0.714712)]>
-			>
-			<[hingedbodygraphics][_roulette_amort_ht_15][]
-				<[string8][GeometryList][ RouletteAmortHt15 ]>
-				<[uint32][PositionID][Fuselage.R]>
-				<[uint32][OrientationID][Fuselage.Q]>
-				<[string8][Input][skids-ercoupe_extMapping_799.Output]>
-				<[tmvector3d][Axis][0.0 -1.0 0.0]>
-				<[tmvector3d][Pivot][1.153900 0.0 -0.653400]>
-				<[string8][Graphics][Cube_15]>
-			>
-			<[graphics_linear_interpolation][skids-ercoupe_extMapping_803][]
-				<[string8][Input][skids-ercoupe_extInput_2.Output]>
-				<[tmvector2d][Map][(0 0.0) (0.25 1.713041)]>
-			>
-			<[hingedbodygraphics][_roulette_amort_bas_15][]
-				<[string8][GeometryList][ RouletteAmortBas15 ]>
-				<[uint32][PositionID][Fuselage.R]>
-				<[uint32][OrientationID][Fuselage.Q]>
-				<[string8][Input][skids-ercoupe_extMapping_803.Output]>
-				<[tmvector3d][Axis][0.0 1.0 0.0]>
-				<[tmvector3d][Pivot][1.102700 0.0 -0.841500]>
-				<[string8][Graphics][_roulette_amort_ht_15]>
-			>
-			<[graphics_linear_interpolation][skids-ercoupe_extMapping_807][]
-				<[string8][Input][skids-ercoupe_extInput_2.Output]>
-				<[tmvector2d][Map][(0 0.0) (0.25 1.004437)]>
-			>
-			<[hingedbodygraphics][_roulette_etrier_15][]
-				<[string8][GeometryList][ RouletteEtrier15 Skiavant15 ]>
-				<[uint32][PositionID][Fuselage.R]>
-				<[uint32][OrientationID][Fuselage.Q]>
-				<[string8][Input][skids-ercoupe_extMapping_807.Output]>
-				<[tmvector3d][Axis][0.0 -1.0 0.0]>
-				<[tmvector3d][Pivot][1.236500 0.0 -0.965800]>
-				<[string8][Graphics][_roulette_amort_bas_15]>
-			>
+            // skids-ercoupe_ext
+            <[rigidbodygraphics][trainCarenage_15][]
+                <[string8][GeometryList][ SkidsErcoupeExt15 Traincarenage15 ]>
+                <[uint32][PositionID][Fuselage.R]>
+                <[uint32][OrientationID][Fuselage.Q]>
+            >
+            // right skid
+            <[graphics_input][skids-ercoupe_extInput_0][]
+                <[uint32][InputID][GroundRollLoadRight.Output]>
+                <[float64][Scaling][0.00005]>
+            >
+            <[graphics_linear_interpolation][skids-ercoupe_extMapping_761][]
+                <[string8][Input][skids-ercoupe_extInput_0.Output]>
+                <[tmvector2d][Map][(0 0.0) (0.25 0.344353)]>
+            >
+            <[hingedbodygraphics][trainArrDte3_15][]
+                <[string8][GeometryList][ Trainarrdte315 ]>
+                <[uint32][PositionID][Fuselage.R]>
+                <[uint32][OrientationID][Fuselage.Q]>
+                <[string8][Input][skids-ercoupe_extMapping_761.Output]>
+                <[tmvector3d][Axis][0.0 -1.0 0.0]>
+                <[tmvector3d][Pivot][-0.089400 -1.108000 -0.807100]>
+            >
+            <[graphics_linear_interpolation][skids-ercoupe_extMapping_765][]
+                <[string8][Input][skids-ercoupe_extInput_0.Output]>
+                <[tmvector2d][Map][(0 0.0) (0.25 0.345924)]>
+            >
+            <[hingedbodygraphics][_skiArrDte_15][]
+                <[string8][GeometryList][ Skiarrdte15 ]>
+                <[uint32][PositionID][Fuselage.R]>
+                <[uint32][OrientationID][Fuselage.Q]>
+                <[string8][Input][skids-ercoupe_extMapping_765.Output]>
+                <[tmvector3d][Axis][0.0 1.0 0.0]>
+                <[tmvector3d][Pivot][-0.388000 -1.256200 -1.099100]>
+                <[string8][Graphics][trainArrDte3_15]>
+            >
+            <[graphics_linear_interpolation][skids-ercoupe_extMapping_770][]
+                <[string8][Input][skids-ercoupe_extInput_0.Output]>
+                <[tmvector2d][Map][ (0 0.0) (0.25 0.057900)]>
+            >
+            <[graphics_translation][skids-ercoupe_extMoving_770][]
+                <[string8][Input][skids-ercoupe_extMapping_770.Output]>
+                <[tmvector3d][Axis][0.0 0.0 0.057900]>
+            >
+            <[rigidbodygraphics][_trainArrDte2_001_15][]
+                <[string8][GeometryList][ Trainarrdte200115 ]>
+                <[uint32][PositionID][Fuselage.R]>
+                <[uint32][OrientationID][Fuselage.Q]>
+                <[string8][InputTransform][skids-ercoupe_extMoving_770.Output]>
+            >
+            // left skid
+            <[graphics_input][skids-ercoupe_extInput_1][]
+                <[uint32][InputID][GroundRollLoadLeft.Output]>
+                <[float64][Scaling][0.00005]>
+            >
+            <[graphics_linear_interpolation][skids-ercoupe_extMapping_775][]
+                <[string8][Input][skids-ercoupe_extInput_1.Output]>
+                <[tmvector2d][Map][(0 0.0) (0.25 0.324806)]>
+            >
+            <[hingedbodygraphics][trainArrGch3_15][]
+                <[string8][GeometryList][ Trainarrgch315 ]>
+                <[uint32][PositionID][Fuselage.R]>
+                <[uint32][OrientationID][Fuselage.Q]>
+                <[string8][Input][skids-ercoupe_extMapping_775.Output]>
+                <[tmvector3d][Axis][0.0 -1.0 0.0]>
+                <[tmvector3d][Pivot][-0.089400 1.107700 -0.807100]>
+            >
+            <[graphics_linear_interpolation][skids-ercoupe_extMapping_779][]
+                <[string8][Input][skids-ercoupe_extInput_1.Output]>
+                <[tmvector2d][Map][(0 0.0) (0.25 0.324980)]>
+            >
+            <[hingedbodygraphics][_skiArrGch_15][]
+                <[string8][GeometryList][ Skiarrgch15 ]>
+                <[uint32][PositionID][Fuselage.R]>
+                <[uint32][OrientationID][Fuselage.Q]>
+                <[string8][Input][skids-ercoupe_extMapping_779.Output]>
+                <[tmvector3d][Axis][0.0 1.0 0.0]>
+                <[tmvector3d][Pivot][-0.388000 1.255900 -1.099100]>
+                <[string8][Graphics][trainArrGch3_15]>
+            >
+            // front skid
+            <[graphics_input][skids-ercoupe_extInput_2][]
+                <[uint32][InputID][GroundRollLoadFront.Output]>
+                <[float64][Scaling][0.00002]>
+            >
+            <[graphics_linear_interpolation][skids-ercoupe_extMapping_784][]
+                <[string8][Input][skids-ercoupe_extInput_2.Output]>
+                <[tmvector2d][Map][ (0 0.0) (0.25 0.055400)]>
+            >
+            <[graphics_translation][skids-ercoupe_extMoving_784][]
+                <[string8][Input][skids-ercoupe_extMapping_784.Output]>
+                <[tmvector3d][Axis][0.0 0.0 0.055400]>
+            >
+            <[rigidbodygraphics][trainArrGch2_001_15][]
+                <[string8][GeometryList][ Trainarrgch200115 ]>
+                <[uint32][PositionID][Fuselage.R]>
+                <[uint32][OrientationID][Fuselage.Q]>
+                <[string8][InputTransform][skids-ercoupe_extMoving_784.Output]>
+            >
+            <[graphics_linear_interpolation][skids-ercoupe_extMapping_788][]
+                <[string8][Input][skids-ercoupe_extInput_2.Output]>
+                <[tmvector2d][Map][ (0 0.0) (0.25 0.188997)]>
+            >
+            <[graphics_translation][skids-ercoupe_extMoving_788][]
+                <[string8][Input][skids-ercoupe_extMapping_788.Output]>
+                <[tmvector3d][Axis][-0.049500 0.0 0.182400]>
+            >
+            <[rigidbodygraphics][_roulette_jambe_verin_15][]
+                <[string8][GeometryList][ RouletteJambeVerin15 ]>
+                <[uint32][PositionID][Fuselage.R]>
+                <[uint32][OrientationID][Fuselage.Q]>
+                <[string8][InputTransform][skids-ercoupe_extMoving_788.Output]>
+            >
+            <[graphics_input][skids-ercoupe_extInput_3][]
+                <[uint32][InputID][ServoSteering.Output]>
+                <[float64][Scaling][50]>
+            >
+            <[graphics_linear_interpolation][skids-ercoupe_extMapping_793][]
+                <[string8][Input][skids-ercoupe_extInput_3.Output]>
+                <[tmvector2d][Map][(-15 -0.349066) (0 0.0) (15 0.349066)]>
+            >
+            <[hingedbodygraphics][Cube_15][]
+                <[string8][GeometryList][ Cube15 RouletteJambeHaut15 ]>
+                <[uint32][PositionID][Fuselage.R]>
+                <[uint32][OrientationID][Fuselage.Q]>
+                <[string8][Input][skids-ercoupe_extMapping_793.Output]>
+                <[tmvector3d][Axis][-0.258800 0.0 0.965900]>
+                <[tmvector3d][Pivot][1.129200 0.0 -0.382100]>
+            >
+            <[graphics_linear_interpolation][skids-ercoupe_extMapping_799][]
+                <[string8][Input][skids-ercoupe_extInput_2.Output]>
+                <[tmvector2d][Map][(0 0.0) (0.25 0.714712)]>
+            >
+            <[hingedbodygraphics][_roulette_amort_ht_15][]
+                <[string8][GeometryList][ RouletteAmortHt15 ]>
+                <[uint32][PositionID][Fuselage.R]>
+                <[uint32][OrientationID][Fuselage.Q]>
+                <[string8][Input][skids-ercoupe_extMapping_799.Output]>
+                <[tmvector3d][Axis][0.0 -1.0 0.0]>
+                <[tmvector3d][Pivot][1.153900 0.0 -0.653400]>
+                <[string8][Graphics][Cube_15]>
+            >
+            <[graphics_linear_interpolation][skids-ercoupe_extMapping_803][]
+                <[string8][Input][skids-ercoupe_extInput_2.Output]>
+                <[tmvector2d][Map][(0 0.0) (0.25 1.713041)]>
+            >
+            <[hingedbodygraphics][_roulette_amort_bas_15][]
+                <[string8][GeometryList][ RouletteAmortBas15 ]>
+                <[uint32][PositionID][Fuselage.R]>
+                <[uint32][OrientationID][Fuselage.Q]>
+                <[string8][Input][skids-ercoupe_extMapping_803.Output]>
+                <[tmvector3d][Axis][0.0 1.0 0.0]>
+                <[tmvector3d][Pivot][1.102700 0.0 -0.841500]>
+                <[string8][Graphics][_roulette_amort_ht_15]>
+            >
+            <[graphics_linear_interpolation][skids-ercoupe_extMapping_807][]
+                <[string8][Input][skids-ercoupe_extInput_2.Output]>
+                <[tmvector2d][Map][(0 0.0) (0.25 1.004437)]>
+            >
+            <[hingedbodygraphics][_roulette_etrier_15][]
+                <[string8][GeometryList][ RouletteEtrier15 Skiavant15 ]>
+                <[uint32][PositionID][Fuselage.R]>
+                <[uint32][OrientationID][Fuselage.Q]>
+                <[string8][Input][skids-ercoupe_extMapping_807.Output]>
+                <[tmvector3d][Axis][0.0 -1.0 0.0]>
+                <[tmvector3d][Pivot][1.236500 0.0 -0.965800]>
+                <[string8][Graphics][_roulette_amort_bas_15]>
+            >
         >
     >
 >
