@@ -1,0 +1,95 @@
+﻿PREVOL	   
+	   
+frein de parc serré
+!!! FLOATS !!! ancre jetée	   
+batterie OFF	   
+radio OFF	   
+robinet carburant OFF	   
+pompe carburant OFF	   
+feux de nav OFF	   
+feux d'atterrissages OFF
+chauffe carbu OFF	   
+gaz à 0
+mélange plein pauvre	   
+mesure vent < équivalent 18kt/90°
+horloge réglée
+altimètre réglé	   
+masse totale < 1261 lb	   
+le niveau de carburant > 1/4	   
+autonomie (temps) théorique.	   
+aire dégagée
+!!! SKIDS !!! pente d'arrêt d'urgence pratiquable.	   
+	   
+	   
+	   
+DEMARRAGE	   
+	   
+	   
+batterie ON	
+trim profondeur au neutre
+!!! FLOATS & SKIDS !!! trim ½ à cabrer
+!!! FLOATS !!! gouvernail déployé
+volant demi à cabrer 
+radios ON	   
+com sur freq. locale	   
+feux de nav ON
+radio : météo
+radio : clearance démarrage/taxi	   
+transpondeur réglé STBY	   
+robinet carburant ON	   
+pompe carburant ON	   
+mélange plein riche	   
+gaz : pomper 3 fois	   
+gaz : ¼
+!!! FLOATS & SKIDS !!! chauffe-carbu ON	 	   
+magnéto gauche ON
+magnéto droite ON
+Démarreur : 10 secondes max.	   
+moteur démarré avant 3° essai.	   
+afficher 900rpm stables.	   
+	   
+	   
+	   
+ESSAIS MOTEURS 	   
+
+!!! SKIDS !!! pas d'essais de régime >650 rpm !
+!!! FLOATS !!! gaz demi : 	>1600rpm
+!!! FLOATS !!! gaz plein : 	2300rpm +/-50rpm
+!!! CADDY !!! gaz plein 1850rpm > 2050rpm (1975rpm)	   
+afficher 900rpm stables.	   
+température huile 50°C mini	   
+gaz plein ralenti	   
+chauffe-carbu ON	   
+RPM > 550	   
+chauffe -carbu OFF	   
+650 rpm +/-30	   
+magneto : droite seulement	   
+600-650 RPM	   
+magneto : gauche seulement	   
+600-650 RPM	   
+magnetos : les deux.	   
+650 rpm +/-30	   
+40°< température d'huile < 100°C	 
+afficher 800rpm.
+
+DECOLLAGE
+
+1200rpm
+lâcher les freins / lever l'ancre
+à 20kt, volant neutre à cabrer, plein gaz
+!!! CADDY !!! tirer à 54kt
+!!! SKIDS & FLOATS !!! tirer à 45kt
+accélèrer jusque 70kt
+tirer pour garder 70kt
+
+CROISIERE 
+
+couper la pompe
+réduire à 1900rpm
+trimer
+chauffe-carbu OFF.
+
+
+
+
+  

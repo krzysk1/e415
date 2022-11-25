@@ -1,0 +1,91 @@
+
+Ercoupe V1.0 par Arno54, Khamsin et www.xpfr.org
+
+Cet appareil est et restera freeware.
+
+TOUTEFOIS VOUS DEVEZ ACCEPTER LES CONDITIONS SUIVANTES
+(pardon pour le formalisme, mais des événements récents et désagréables nous poussent à dire des choses pas aimables.)
+
+---------------------------------------------------
+------------Si vous êtes un particulier------------ 
+---------------------------------------------------
+
+vous pouvez en faire absolument ce que bon vous semble.
+Les sources sont d'ailleurs disponibles dans l'archive.
+Vous pouvez donc étudier tout le bouzin, modifier ce que vous voulez etc.
+
+Si vous faites des modifs, je vous demande de m'en tenir informé (arno54xpfr@gmail.com)
+de façon que je puisse éventuellement tenir compte de ces modifs pour les mises à jours ultérieures.
+Si vous faites une modif, c'est que quelque chose n'est pas au top, n'est-ce pas?
+
+Si vous avez des questions sur la conception ou besoin d'aide pour vos modifs, je serai ravi de vous aider.
+
+Je vous demande toutefois de NE PAS REDISTRIBUER l'avion.
+
+Donnez le lien www.xpfr.org, c'est plus correct. 
+
+Si vous souhaitez modifier puis redistribuer l'appareil, 
+tenez moi informé AVANT, du pourquoi et du comment, simple question de politesse...
+
+Pour faire simple : je compte simplement sur votre élégance.
+
+
+---------------------------------------------------
+------------Si vous êtes un DEVELOPPEUR------------
+---------------------------------------------------
+
+pour xplane ou non ! FlightGear, FS, ou autre...
+Bienvenue ! 
+
+Sachez que toutes les sources de l'appareil, documents d'origine etc vous sont accessibles.
+
+Donc passez-moi un mail, 
+et considèrez que par défaut vous avez toutes les autorisations morales nécessaires pour commencer vos bricolages ! 
+Je vous demande toutefois de prèvoir dès à prèsent de laisser dans le zip de redistribution toutes les mentions du travail d'origine, y compris et en particulier le fichier "crédits.txt".
+
+L'utilisation pour un autre sim n'est soumise qu'à une condition (mais celle-ci n'est pas négociable) : 
+ça ne doit avoir absolument aucune implication commerciale, ni de près ni de loin, ni directement ni indirectement.
+Considèrez que l'appareil est et doit rester absolument freeware, opensource. 
+
+Si vous avez besoin d'un fichier particulier pour réaliser l'importation/exportation vers un autre simu, 
+passez moi un mail, si le fichier existe vous l'aurez.
+
+N'hésitez pas à me contacter pour en parler ;-) 
+
+ 
+------------------------------------------------------------------------------------------------------
+------------Par contre, si vous êtes un groupe, une entreprise ------------
+------------et plus généralement si il y a un intérêt commercial à votre activité, directement ou indirectement------------
+------------------------------------------------------------------------------------------------------
+
+Nous sommes ABSOLUMENT OPPOSES A TOUTE FORME D'UTILISATION DE TOUT OU PARTIE DE CETTE PUBLICATION.
+
+Nous sommes ABSOLUMENT OPPOSES A L'UTILISATION DU MOINDRE OCTET DE DONNEES VENANT DE CETTE PUBLICATION.
+
+Nous sommes ABSOLUMENT OPPOSES A LA REDISTRIBUTION DU MOINDRE OCTET DE CE DOSSIER.
+
+Sur le principe, 
+nous sommes  même opposés à ce que vous utilisiez cet appareil, 
+que vous l'éditiez, 
+que vous l'étudiiez ; 
+
+Nous sommes absolument favorables 
+à ce que vous effaciez immédiatement la totalité de cette archive 
+et que vous en oubliiez l'existence.
+------------------------------------------------------------------------------------------------------
+Je pense que ceci est suffisamment clair et ne prête pas à confusion.
+------------------------------------------------------------------------------------------------------
+
+Dans l'hypothèse où tout ou partie, même insignifiante, 
+de cet appareil serait utilisé d'une façon ou d'une autre, 
+par une personne morale ou physique ayant un quelconque intêret commercial,
+direct ou indirect,
+dans le fait de l'utiliser ou le distribuer, 
+cette personne commettrait sciemment un dol quant au copyright,
+et nous nous réservons la possibilité de faire valoir nos droits sans aucun préavis, 
+ce fichier-texte excluant explicitement toute éventualité de négociation sur ce point.
+
+
+
+
+

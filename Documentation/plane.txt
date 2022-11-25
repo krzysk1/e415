@@ -1,0 +1,36 @@
+About This File
+This is a two seater monoprop plane designed to be unable to enter a spin ( rudder coordinated with ailerons)
+ 
+it is proposed in 3 versions :
+
+- Caddy on wheels, 75hp engine and fixed propeller
+- Floats seaplane, 85hp engine and automatic variable-pitch propeller
+- Skids Cross-country version on skids, 85hp engine and automatic variable-pitch propeller
+
+Don't forget to read the documentation.
+
+This plane was specially designed to be used on weak computers and this model use particulary the new XP11's metalness reflexions.
+
+Flight Model, systems and animations by Arno54, 3D artwork, textures and iconography by Khamsin. XP11's update by Beber and Leen de jager.
+
+#GoodWay v4.2.0
+
+cruise_speed=83
+descent_rate=400
+descent_speed=65
+plane_constructor=Ercoupe
+xplane_certified=9.55
+author=Arno54 & Khamsin & XPFR
+cruise_altitude=6500
+plane_type=E415C
+max_seats=2
+plane_full_name=Ercoupe 415C
+release_date=15 01 2011
+fuel_max_onboard=260
+climb_speed=70
+plane_compagny=Private Light Sport Aircraft
+release=1.0
+fuel_max_consumption_hour=8
+author_web=http://www.xpfr.org
+maximum_range=480
+climb_rate=550
