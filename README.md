@@ -9,10 +9,18 @@ Aerofly FS 4 aircraft made by Krzysztof Kaniewski. Flight Model, systems and ani
  Some features may not work as intended and this aircraft could crash your Aerofly FS4. 
  Use it at your own risk!
 
-Installation
+# Installation
 
 1. Unzip file and move the folder "e415" to C:\Users\~\Documents\Aerofly FS4\aircraft.
 
+# Uninstall
+
+1. Delete the folder "e415".
+
+# Tips
+
 Note: there are no pedals = rudder is connected with ailerons
+
+# Resources
 
 Aircraft Technical Data & Specifications: http://www.airliners.net/aircraft-data/erco-ercoupe-and-derivatives/393

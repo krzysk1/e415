@@ -2413,6 +2413,7 @@
                 <[uint32][VelocityID][Fuselage.V]>
                 <[string8][SoundFile][prop1.wav]>
                 <[bool][External][false]>
+                <[tmvector3d][R0][1.7 0.0 0.0]>			   
             >
 
             // starter cranking
@@ -2437,6 +2438,7 @@
                 <[uint32][PositionID][Fuselage.R]>
                 <[uint32][VelocityID][Fuselage.V]>
                 <[string8][SoundFile][star1.wav]>
+                <[tmvector3d][R0][1.5 0.0 0.0]>			   
             >
 
             // engine loop rpm_eng 1300.0
@@ -2456,7 +2458,8 @@
                 <[string8][InputPitch][RPMPitchRun.Output]>
                 <[uint32][PositionID][Fuselage.R]>
                 <[uint32][VelocityID][Fuselage.V]>
-               <[string8][SoundFile][engn1.wav]>
+                <[string8][SoundFile][engn1.wav]>
+                <[tmvector3d][R0][1.5 0.0 0.0]>			   
             >
 
             // wheels
