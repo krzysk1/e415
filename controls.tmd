@@ -443,7 +443,7 @@
                 <[control_message][OnRotate][]
                     <[string8][Message][Communication.COM1Frequency]>
                     <[string8][Qualifiers][step]>
-                    <[float64][Value][1.0]>
+                    <[float64][Value][40.0]>
                 >
                 <[float64][Radius][0.01]>
                 <[float64][Length][0.012]>
@@ -457,69 +457,69 @@
                 <[control_message][OnRotate][]
                     <[string8][Message][Communication.COM1Frequency]>
                     <[string8][Qualifiers][step]>
-                    <[float64][Value][40.0]>
+                    <[float64][Value][1.0]>
                 >
                 <[float64][Radius][0.01]>
                 <[float64][Length][0.012]>
             >
 			// transponder
-            <[control_cylinder][TransponderKnob1][2]
+            <[control_cylinder][TransponderKnob1][]
                 <[float64][Type][knob]>
                 <[vector3_float64][R0][0.1759 -0.1235 -0.00905]>
                 <[matrix3_float64][B0][ 1.0 0.0 0.0  0.0 1.0 0.0  0.0 0.0 1.0 ]>
                 <[vector3_float64][Direction][ 1.0 0.0 0.0 ]>
                 <[float64][StepAngle][0.2]>
                 <[control_message][OnRotate][]
-                    <[string8][Message][Communication.Transponder.Knob1]>
+                    <[string8][Message][Communication.TransponderCode]>
                     <[string8][Qualifiers][step]>
-                    <[float64][Value][1.0]>
+                    <[float64][Value][1000.0]>
                 >
                 <[float64][Radius][0.005]>
                 <[float64][Length][0.012]>
             >
-            <[control_cylinder][TransponderKnob2][2]
+            <[control_cylinder][TransponderKnob2][]
                 <[float64][Type][knob]>
                 <[vector3_float64][R0][0.1759 -0.1389 -0.00905]>
                 <[matrix3_float64][B0][ 1.0 0.0 0.0  0.0 1.0 0.0  0.0 0.0 1.0 ]>
                 <[vector3_float64][Direction][ 1.0 0.0 0.0 ]>
                 <[float64][StepAngle][0.2]>
                 <[control_message][OnRotate][]
-                    <[string8][Message][Communication.Transponder.Knob2]>
+                    <[string8][Message][Communication.TransponderCode]>
                     <[string8][Qualifiers][step]>
-                    <[float64][Value][1.0]>
+                    <[float64][Value][100.0]>
                 >
                 <[float64][Radius][0.005]>
                 <[float64][Length][0.012]>
             >
-            <[control_cylinder][TransponderKnob3][2]
+            <[control_cylinder][TransponderKnob3][]
                 <[float64][Type][knob]>
                 <[vector3_float64][R0][0.1759 -0.1546 -0.00905]>
                 <[matrix3_float64][B0][ 1.0 0.0 0.0  0.0 1.0 0.0  0.0 0.0 1.0 ]>
                 <[vector3_float64][Direction][ 1.0 0.0 0.0 ]>
                 <[float64][StepAngle][0.2]>
                 <[control_message][OnRotate][]
-                    <[string8][Message][Communication.Transponder.Knob3]>
+                    <[string8][Message][Communication.TransponderCode]>
                     <[string8][Qualifiers][step]>
-                    <[float64][Value][1.0]>
+                    <[float64][Value][10.0]>
                 >
                 <[float64][Radius][0.005]>
                 <[float64][Length][0.012]>
             >
-            <[control_cylinder][TransponderKnob4][2]
+            <[control_cylinder][TransponderKnob4][]
                 <[float64][Type][knob]>
                 <[vector3_float64][R0][0.1759 -0.17 -0.00905]>
                 <[matrix3_float64][B0][ 1.0 0.0 0.0  0.0 1.0 0.0  0.0 0.0 1.0 ]>
                 <[vector3_float64][Direction][ 1.0 0.0 0.0 ]>
                 <[float64][StepAngle][0.2]>
                 <[control_message][OnRotate][]
-                    <[string8][Message][Communication.Transponder.Knob4]>
+                    <[string8][Message][Communication.TransponderCode]>
                     <[string8][Qualifiers][step]>
                     <[float64][Value][1.0]>
                 >
                 <[float64][Radius][0.005]>
                 <[float64][Length][0.012]>
             >
-            <[control_input][TransponderModeInput][2]
+            <[control_input][TransponderModeInput][]
                 <[uint32][InputID][TransponderMode.Output]>				
             >
             <[control_translation][TransponderModeTranslation][2]
@@ -540,7 +540,7 @@
                 <[vector3_float64][Dimensions][0.006 0.006 0.01]>
             >
 			// clock
-            <[control_cylinder][ClockSelect][50]
+            <[control_cylinder][ClockSelect][]
                 <[string8][Type][knob]>
                 <[vector3_float64][R0][0.1761 0.01955 0.08185]>
                 <[matrix3_float64][B0][ 1.0 0.0 0.0  0.0 1.0 0.0  0.0 0.0 1.0 ]>

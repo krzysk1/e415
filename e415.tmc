@@ -34,6 +34,6 @@
         <[uint][EngineCount][1]>
         <[uint][Year][1937]>
         <[string8][Tags][ airplane historical piston general_aviation ]>
-		<[string8][Pilot][]>
+        <[string8][Pilot][pilot_robert]>
     >
 >

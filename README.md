@@ -11,7 +11,7 @@ Aerofly FS 4 aircraft made by Krzysztof Kaniewski. Flight Model, systems and ani
 
 # Installation
 
-1. Unzip file and move the folder "e415" to C:\Users\~\Documents\Aerofly FS4\aircraft.
+1. Unzip file and move the folder "e415" into the C:\Users\~\Documents\Aerofly FS 4\aircraft folder.
 
 # Uninstall
 
