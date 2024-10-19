@@ -1012,7 +1012,7 @@
                 <[float64][StepLarge][40.0]>
                 <[tmvector2d][Range][ 118000000.0 137000000.0 ]>
                 <[float64][Active]  [ 123000000.0 ]>
-                <[float64][Standby] [ 118525000.0 ]>   
+                <[float64][Standby] [ 118525000.0 ]>
             >
             <[output][COM1Frequency][]
                 <[string8][Input][COM1FrequencyInput.Output]>
@@ -1028,11 +1028,11 @@
                 <[string8][Input][COM1FrequencyInput.OutputStandby]>
                 <[string8][Message][Communication.COM1StandbyFrequency]>
             >
-			
+
             // transponder 1
             <[constant][TransponderOn][]
                 <[string8][Input][1.0]>
-            >			
+            >
             <[transponder][Transponder1][]
                 <[string8][InputEnable][TransponderOn.Output]>
                 <[float64][Active][2000]>
@@ -1046,7 +1046,7 @@
             >
             <[output_free][TransponderOnOutput][]
                 <[string8][Input][TransponderOn.Output]>
-            >			
+            >
             <[input_discrete][TransponderMode][]
                 <[string8][Message][Communication.TransponderMode]>
                 <[tmvector2d][Range][ 0.0 3.0 ]>
@@ -1832,7 +1832,7 @@
                 <[string8][Input][Com1Active100ths.Output]>
                 <[tmvector3d][Axis][ 0.0 1.0 0.0 ]>
                 <[tmvector3d][Pivot][0.2008 0.1374 0.0036]>
-                <[float64][Scaling][-0.628319]>				
+                <[float64][Scaling][-0.628319]>
                 <[string8][InputIllumination0][InstrumentsLighting.Output]>
             >
             <[hingedbodygraphics][Com1Active10thsIndicator][]
@@ -1842,7 +1842,7 @@
                 <[string8][Input][Com1Active10ths.Output]>
                 <[tmvector3d][Axis][ 0.0 1.0 0.0 ]>
                 <[tmvector3d][Pivot][0.2008 0.1283 0.0036]>
-                <[float64][Scaling][-0.628319]>				
+                <[float64][Scaling][-0.628319]>
                 <[string8][InputIllumination0][InstrumentsLighting.Output]>
             >
             <[hingedbodygraphics][Com1Active1sIndicator][]
@@ -1852,7 +1852,7 @@
                 <[string8][Input][Com1Active1s.Output]>
                 <[tmvector3d][Axis][ 0.0 1.0 0.0 ]>
                 <[tmvector3d][Pivot][0.2008 0.1191 0.0036]>
-                <[float64][Scaling][-0.628319]>				
+                <[float64][Scaling][-0.628319]>
                 <[string8][InputIllumination0][InstrumentsLighting.Output]>
             >
             <[hingedbodygraphics][Com1Active10sIndicator][]
@@ -1862,7 +1862,7 @@
                 <[string8][Input][Com1Active10s.Output]>
                 <[tmvector3d][Axis][ 0.0 1.0 0.0 ]>
                 <[tmvector3d][Pivot][0.2008 0.110 0.0036]>
-                <[float64][Scaling][-0.628319]>				
+                <[float64][Scaling][-0.628319]>
                 <[string8][InputIllumination0][InstrumentsLighting.Output]>
             >
             // Yokes
@@ -2171,7 +2171,7 @@
             >
 
             //transponder_mode
-			
+
             <[graphics_input][TranspondSelectorInput][]
                 <[uint32][InputID][TransponderMode.Output]>
             >
@@ -2200,12 +2200,12 @@
             <[graphics_input][TransponderOn][]
                 <[uint32][InputID][TransponderOn.Output]>
             >
-			
+
             <[graphics_drum_gauge][TransponderCodeDrum][]
                 <[uint32][Input][TransponderCode.Output]>
                 <[uint32][InputEnable][TransponderEnabled.Output]>
             >
-			
+
             <[graphics_drum_gauge][TransponderCode1000Drum][]
                 <[uint32][Input][TransponderCodeDrum.Output1000]>
                 <[uint32][InputEnable][TransponderOn.Output]>
@@ -2218,14 +2218,14 @@
                 <[string8][Input][TransponderCode1000Drum.Output1]>
                 <[tmvector3d][Axis][ 0.0 1.0 0.0 ]>
                 <[tmvector3d][Pivot][0.2008 -0.1237 0.0055]>
-                <[float64][Scaling][-1.09]>				
+                <[float64][Scaling][-1.09]>
                 <[string8][InputIllumination0][InstrumentsLighting.Output]>
             >
             <[graphics_drum_gauge][TransponderCode100Drum][]
                 <[uint32][Input][TransponderCodeDrum.Output100]>
                 <[uint32][InputEnable][TransponderOn.Output]>
                 <[float64][Scaling][1.750704]>
-            >			
+            >
             <[hingedbodygraphics][TransponderCode100][]
                 <[string8][GeometryList][ TranspondWheel1001 ]>
                 <[uint32][PositionID][Fuselage.R]>
@@ -2233,14 +2233,14 @@
                 <[string8][Input][TransponderCode100Drum.Output1]>
                 <[tmvector3d][Axis][ 0.0 1.0 0.0 ]>
                 <[tmvector3d][Pivot][0.2008 -0.1391 0.0055]>
-                <[float64][Scaling][-1.09]>				
+                <[float64][Scaling][-1.09]>
                 <[string8][InputIllumination0][InstrumentsLighting.Output]>
             >
             <[graphics_drum_gauge][TransponderCode10Drum][]
                 <[uint32][Input][TransponderCodeDrum.Output10]>
                 <[uint32][InputEnable][TransponderOn.Output]>
                 <[float64][Scaling][1.750704]>
-            >			
+            >
             <[hingedbodygraphics][TransponderCode10][]
                 <[string8][GeometryList][ TranspondWheel101 ]>
                 <[uint32][PositionID][Fuselage.R]>
@@ -2248,7 +2248,7 @@
                 <[string8][Input][TransponderCode10Drum.Output1]>
                 <[tmvector3d][Axis][ 0.0 1.0 0.0 ]>
                 <[tmvector3d][Pivot][0.2008 -0.1543 0.0055]>
-                <[float64][Scaling][-1.09]>					
+                <[float64][Scaling][-1.09]>
                 <[string8][InputIllumination0][InstrumentsLighting.Output]>
             >
             <[graphics_drum_gauge][TransponderCode1Drum][]
@@ -2263,16 +2263,16 @@
                 <[string8][Input][TransponderCode1Drum.Output1]>
                 <[tmvector3d][Axis][ 0.0 1.0 0.0 ]>
                 <[tmvector3d][Pivot][0.2008 -0.1698 0.0055]>
-                <[float64][Scaling][-1.09]>				
+                <[float64][Scaling][-1.09]>
                 <[string8][InputIllumination0][InstrumentsLighting.Output]>
-            >			
+            >
             <[rigidbodygraphics][TransponderKnobs][]
                 <[string8][GeometryList][ Tranpondknob1000031  Tranpondknob1001  Tranpondknob1000061  Tranpondknob1000071 ]>
                 <[uint32][PositionID][Fuselage.R]>
                 <[uint32][OrientationID][Fuselage.Q]>
                 <[string8][InputIllumination0][PanelLighting.Output]>
             >
-			
+
             // human animation
             <[graphics_input][UniversalTime][]
                 <[uint32][InputID][UniversalTime.Output]>

@@ -12,7 +12,7 @@
                 <[string8][RotationSpeed][DriveShaft.RotationSpeed]>
                 <[string8][InputAngle][PropellerJoint.Output]>
                 <[float64][RotationInertia][1.1776]>
-                <[float64][ThrottleIdle][0.1]>
+                <[float64][ThrottleIdle][0.17]>
                 <[string8][AddTorque][DriveShaft.AddTorque]>
                 <[string8][AddInertia][DriveShaft.AddInertia]>
                 <[float64][Friction][50.0]>
