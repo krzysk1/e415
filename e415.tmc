@@ -1,19 +1,23 @@
 ﻿<[file][][]
-    <[object][][]
-        <[int][Version][220]>
-        <[vec32array][ContactSpheres][ (-0.388 1.255 -1.099 0.204) (-0.388 -1.255 -1.099 0.204) (1.317 0.0 -1.152 0.152) ]>
-        <[string8][ICAO][ERCO]>
+    <[modelinformation][][]
+        <[int32][Version][220]>
+        <[list_vector4_float64][ContactSpheres][ (-0.388 1.255 -1.099 0.204) (-0.388 -1.255 -1.099 0.204) (1.317 0.0 -1.152 0.152) ]>
+        <[stringt8c][ICAO][ERCO]>
         <[string8][DisplayName][Ercoupe 415-C]>
         <[string8][DisplayNameFull][ERCO 415-C Ercoupe]>
-        <[localized_text_list][Descriptions][]
-            <[localized_text][][]
+        <[list_localized_text][Descriptions][]
+            <[localized_text][element][0]
                 <[string8][Language][en]>
                 <[string8][Text][The ERCO Ercoupe is a low-wing monoplane aircraft that was designed and built in the United States. It was first manufactured by the Engineering and Research Corporation (ERCO) shortly before World War II; several other manufacturers continued its production after the war. Lacking rudder pedals, the Ercoupe was flown using only the control wheel. Aerofly FS 4 aircraft made by Krzysk, flight Model, systems and animations by Arno54, 3D model by Khamsin.]>
             >
-            <[localized_text][][]
+            <[localized_text][element][1]
                 <[string8][Language][de]>
                 <[string8][Text][Die ERCO Ercoupe war ein zweisitziges, leichtes Sport- und Schulflugzeug des US-amerikanischen Herstellers Engineering and Research Corporation. Konstrukteur war Fred Weick, der mit einer stark vereinfachten Flugsteuerung unkontrollierbare Flugzustände, wie Überziehen und Trudeln, verhindern wollte. Für Aerofly FS4 von Krzysk. 3d-Modell erstellt von Arno54 und Khamsin.]>
 			>
+            <[localized_text][element][2]
+                <[string8][Language][pl]>
+                <[string8][Text][ERCO Ercoupe to jednopłatowy dolnopłat, który został zaprojektowany i zbudowany w Stanach Zjednoczonych. Po raz pierwszy został wyprodukowany przez Engineering and Research Corporation (ERCO) na krótko przed II wojną światową; kilku innych producentów kontynuowało jego produkcję po wojnie. Bez pedałów steru kierunku, Ercoupe był pilotowany przy użyciu tylko koła sterowego. Samolot Aerofly FS 4 autorstwa Krzyska, model lotu, systemy i animacje autorstwa Arno54, model 3D autorstwa Khamsina.]>
+            >
         >
 		<[float64][WingSpan][9.14]>
 		<[float64][MaximumAirspeed][48.0]>
