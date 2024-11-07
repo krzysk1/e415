@@ -1674,11 +1674,11 @@
             >
             <[graphics_input][CockpitInput_6][]
                 <[uint32][InputID][VerticalSpeedIndicatorNeedle.Output]>
-                <[float64][Scaling][196.85]>
+                <[float64][Scaling][1.9685]>
             >
             <[graphics_linear_interpolation][CockpitMapping_117][]
                 <[string8][Input][CockpitInput_6.Output]>
-                <[tmvector2d][Map][(-10000.0 -2.957984) (-6000.0 -2.957984) (-4000.0 -2.231578) (-2000.0 -1.346522) (-1000.0 -0.754680) (0.0 0.0) (1000.0 0.754680) (2000.0 1.346522) (4000.0 2.231578) (6000.0 2.957984) (10000.0 2.957984) ]>
+                <[tmvector2d][Map][(-100.0 -2.957984) (-60.0 -2.957984) (-40.0 -2.231578) (-20.0 -1.346522) (-10.0 -0.754680) (0.0 0.0) (10.0 0.754680) (20.0 1.346522) (40.0 2.231578) (60.0 2.957984) (100.0 2.957984) ]>
             >
             <[hingedbodygraphics][needle_vertical-speed_1][]
                 <[string8][GeometryList][ NeedleVerticalSpeed1 ]>
