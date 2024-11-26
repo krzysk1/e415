@@ -32,7 +32,7 @@
             <[camera_head][CameraPilot][]
                 <[string8][Tags][cockpit pilot left]>
                 <[string8][Body][Fuselage]>
-                <[tmvector3d][R0][ -0.4336 0.2134 0.3658 ]>
+                <[tmvector3d][R0][ -0.39 0.21 0.36 ]>
                 <[tmvector3d][Direction][ 1.0 0.0 0.0 ]>
                 <[float64][Kf][40.0]>
                 <[float64][Df][1.00]>
@@ -43,7 +43,7 @@
             <[camera][CameraCoPilot][]
                 <[string8][Tags][cockpit pilot right]>
                 <[string8][Body][Fuselage]>
-                <[tmvector3d][R0][-0.2697 -0.2472 0.3880]>
+                <[tmvector3d][R0][ -0.26 -0.24 0.38 ]>
                 <[tmvector3d][Direction][1.0 0.0 0.0]>
                 <[bool][InCockpit][true]>
             >
@@ -2273,7 +2273,7 @@
                 <[string8][InputIllumination0][PanelLighting.Output]>
             >
 
-            // human animation
+            // pilot animation
             <[graphics_input][UniversalTime][]
                 <[uint32][InputID][UniversalTime.Output]>
             >
@@ -2341,7 +2341,7 @@
                 <[tmvector3d][Axis][1.0 0.0 0.0]>
             >
 
-            // human graphics start
+            // pilot graphics start
             <[graphics_human][Pilot][]
                 <[uint32][PositionID][Fuselage.R]>
                 <[uint32][OrientationID][Fuselage.Q]>
