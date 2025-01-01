@@ -1654,22 +1654,13 @@
                 <[tmvector3d][Pivot][0.1908 0.3663 0.0258]>
                 <[string8][InputIllumination0][InstrumentsLighting.Output]>
             >
-            <[graphics_input][CockpitInput_5][]
-                <[uint32][InputID][ThrottleLever.Output]>
-            >
-            <[graphics_linear_interpolation][CockpitMapping_112][]
-                <[string8][Input][CockpitInput_5.Output]>
-                <[tmvector2d][Map][ (0 0.0) (1 0.073)]>
-            >
-            <[graphics_translation][CockpitMoving_112][]
-                <[string8][Input][CockpitMapping_112.Output]>
-                <[tmvector3d][Axis][1.0 0.0 0.0]>
-            >
-            <[rigidbodygraphics][throttle_1][]
+            <[movinggraphics][ThrottleLever][]
                 <[string8][GeometryList][ Throttle1 ]>
                 <[uint32][PositionID][Fuselage.R]>
                 <[uint32][OrientationID][Fuselage.Q]>
-                <[string8][InputTransform][CockpitMoving_112.Output]>
+                <[uint32][InputID][ThrottleLever.Output]>
+                <[tmvector3d][Axis][1.0 0.0 0.0]>
+                <[float64][Scaling][0.073]>
                 <[string8][InputIllumination0][PanelLighting.Output]>
             >
             <[graphics_input][CockpitInput_6][]
@@ -1690,61 +1681,34 @@
                 <[string8][InputIllumination0][InstrumentsLighting.Output]>
             >
             // mixture
-            <[graphics_input][CockpitInput_7][]
-                <[uint32][InputID][MixtureLever.Output]>
-                <[float64][Scaling][1.0]>
-            >
-            <[graphics_linear_interpolation][CockpitMapping_128][]
-                <[string8][Input][CockpitInput_7.Output]>
-                <[tmvector2d][Map][(0 0.0470)(1 0.0)]>
-            >
-            <[graphics_translation][CockpitMoving_128][]
-                <[string8][Input][CockpitMapping_128.Output]>
-                <[tmvector3d][Axis][-0.047 0.0 0.0]>
-            >
-            <[rigidbodygraphics][mixture_1][]
+            <[movinggraphics][MixtureLever][]
                 <[string8][GeometryList][ Mixture1 ]>
                 <[uint32][PositionID][Fuselage.R]>
                 <[uint32][OrientationID][Fuselage.Q]>
-                <[string8][InputTransform][CockpitMoving_128.Output]>
+                <[uint32][InputID][MixtureLever.Output]>
+                <[tmvector3d][Axis][1 0.0 0.0]>
+                <[float64][Scaling][0.047]>
+                <[float64][Offset][-0.047]>
                 <[string8][InputIllumination0][PanelLighting.Output]>
             >
             // carb heat
-            <[graphics_input][CockpitInput_8][]
-                <[uint32][InputID][CarburettorHeatLever.Output]>
-            >
-            <[graphics_linear_interpolation][CockpitMapping_132][]
-                <[string8][Input][CockpitInput_8.Output]>
-                <[tmvector2d][Map][ (0 0.0) (1 0.0455)]>
-            >
-            <[graphics_translation][CockpitMoving_132][]
-                <[string8][Input][CockpitMapping_132.Output]>
-                <[tmvector3d][Axis][-0.0455 0.0 0.0]>
-            >
-            <[rigidbodygraphics][carbHeat_1][]
+            <[movinggraphics][CarburettorHeatLever][]
                 <[string8][GeometryList][ Carbheat1 ]>
                 <[uint32][PositionID][Fuselage.R]>
                 <[uint32][OrientationID][Fuselage.Q]>
-                <[string8][InputTransform][CockpitMoving_132.Output]>
+                <[uint32][InputID][CarburettorHeatLever.Output]>
+                <[tmvector3d][Axis][1 0.0 0.0]>
+                <[float64][Scaling][-0.0455]>
                 <[string8][InputIllumination0][PanelLighting.Output]>
             >
             // Starter button
-            <[graphics_input][IgnitionInput][]
-                <[uint32][InputID][StarterButtonPushed.Output]>
-            >
-            <[graphics_linear_interpolation][IgnitionMapping][]
-                <[string8][Input][IgnitionInput.Output]>
-                <[tmvector2d][Map][ (0 0.0) (1 0.0112)]>
-            >
-            <[graphics_translation][IgnitionMoving][]
-                <[string8][Input][IgnitionMapping.Output]>
-                <[tmvector3d][Axis][0.0112 0.0 0.0]>
-            >
-            <[rigidbodygraphics][KnobStart_1][]
+            <[movinggraphics][StarterButton][]
                 <[string8][GeometryList][ Knobstart1 ]>
                 <[uint32][PositionID][Fuselage.R]>
                 <[uint32][OrientationID][Fuselage.Q]>
-                <[string8][InputTransform][IgnitionMoving.Output]>
+                <[uint32][InputID][StarterButtonPushed.Output]>
+                <[tmvector3d][Axis][1 0.0 0.0]>
+                <[float64][Scaling][0.0112]>
                 <[string8][InputIllumination0][PanelLighting.Output]>
             >
             // balance indicator
@@ -1875,7 +1839,7 @@
             >
             <[graphics_translation][StickRollTransform][]
                 <[string8][Input][CockpitMapping_286.Output]>
-                <[tmvector3d][Axis][0.0802 0.0 0.0]>
+                <[tmvector3d][Axis][1.0 0.0 0.0]>
             >
             <[rigidbodygraphics][yokeLeft_001_1][]
                 <[string8][GeometryList][ YokeLeft0011 ]>
@@ -2014,7 +1978,7 @@
             >
             <[graphics_translation][CockpitMoving_373][]
                 <[string8][Input][CockpitMapping_373.Output]>
-                <[tmvector3d][Axis][0.1171 0.0 0.0]>
+                <[tmvector3d][Axis][1.0 0.0 0.0]>
             >
             <[rigidbodygraphics][YokeRight_001_1][]
                 <[string8][GeometryList][ YokeRight0011 ]>
@@ -2029,7 +1993,7 @@
             >
             <[graphics_translation][CockpitMoving_376][]
                 <[string8][Input][CockpitMapping_376.Output]>
-                <[tmvector3d][Axis][0.0284 0.0 0.0]>
+                <[tmvector3d][Axis][1.0 0.0 0.0]>
                 <[string8][InputTransform][CockpitMoving_373.Output]>
             >
             <[graphics_linear_interpolation][CockpitMapping_377][]
@@ -2060,7 +2024,7 @@
             >
             <[graphics_translation][CockpitMoving_PB][]
                 <[string8][Input][CockpitMapping_PB.Output]>
-                <[tmvector3d][Axis][0.0284 0.0 0.0]>
+                <[tmvector3d][Axis][1.0 0.0 0.0]>
             >
             <[graphics_linear_interpolation][CockpitMapping_403][]
                 <[string8][Input][CockpitInput_23.Output]>
