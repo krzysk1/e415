@@ -19,24 +19,24 @@
                 <[string8][Text][ERCO Ercoupe to jednopłatowy dolnopłat, który został zaprojektowany i zbudowany w Stanach Zjednoczonych. Po raz pierwszy został wyprodukowany przez Engineering and Research Corporation (ERCO) na krótko przed II wojną światową; kilku innych producentów kontynuowało jego produkcję po wojnie. Bez pedałów steru kierunku, Ercoupe był pilotowany przy użyciu tylko koła sterowego. Samolot Aerofly FS4 autorstwa Krzyska, model lotu, systemy i animacje autorstwa Arno54, model 3D autorstwa Khamsina.]>
             >
         >
-		<[float64][WingSpan][9.14]>
-		<[float64][MaximumAirspeed][48.0]>
-		<[float64][MaximumSpeed][48.0]>
-		<[float64][MinimumAirspeed][21.0]>
-        <[float64][ApproachAirspeed][23.3]>
-        <[float64][CruiseAirspeed][41.5]>
-        <[float64][CruiseSpeed][63.5]>
-		<[vector2_float64][NormalAirspeedRange][ 21.0 48.0 ]>
-		<[vector2_float64][CautionAirspeedRange][ 48.0 62.5 ]>
-		<[vector2_float64][FlapAirspeedRange][ 0.0 0.0 ]>
-        <[float64][MaximumAltitude][4000.0]>
-        <[float64][CruiseAltitude][1826.0]>
         <[float64][MaximumTakeoffMass][572.0]>
-        <[float64][EnginePower][56000.0]>
-        <[float64][MaximumRange][480000.0]>
-        <[uint32][UnitsBuilt][5685]>
-        <[uint32][EngineCount][1]>
-        <[uint32][Year][1937]>
+		<[float64][WingSpan]          [9.14]>
+        <[uint32] [Year]              [1937]>
+        <[uint32] [UnitsBuilt]        [5685]>
+        <[uint32] [EngineCount]       [1]>
+        <[float64][EnginePower]       [56000.0]>
+		<[float64][MaximumAirspeed]   [48.0]>
+		<[float64][MaximumSpeed]      [48.0]>
+		<[float64][MinimumAirspeed]   [21.0]>
+        <[float64][ApproachAirspeed]  [23.3]>
+        <[float64][CruiseAirspeed]    [41.5]>
+        <[float64][CruiseSpeed]       [63.5]>
+        <[float64][MaximumAltitude]   [4000.0]>
+        <[float64][CruiseAltitude]    [1826.0]>
+        <[float64][MaximumRange]      [480000.0]>
+		<[vector2_float64][FlapAirspeedRange]   [  0.0  0.0 ]>
+		<[vector2_float64][NormalAirspeedRange] [ 21.0 48.0 ]>
+		<[vector2_float64][CautionAirspeedRange][ 48.0 62.5 ]>
         <[string8][Tags][ airplane historical piston gear general_aviation ]>
         <[string8][Pilot][pilot_robert]>
     >
