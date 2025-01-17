@@ -34,7 +34,6 @@
         <[float64][MaximumAltitude]   [4000.0]>
         <[float64][CruiseAltitude]    [1826.0]>
         <[float64][MaximumRange]      [480000.0]>
-		<[vector2_float64][FlapAirspeedRange]   [  0.0  0.0 ]>
 		<[vector2_float64][NormalAirspeedRange] [ 21.0 48.0 ]>
 		<[vector2_float64][CautionAirspeedRange][ 48.0 62.5 ]>
         <[string8][Tags][ airplane historical piston gear general_aviation ]>
