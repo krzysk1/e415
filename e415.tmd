@@ -17,7 +17,6 @@
             // telemetry
             <[telemetry][Telemetry][]
                 <[string8][Body][Fuselage]>
-                <[tmvector3d][LookAtPosition][ 0.0 0.0 0.0 ]>
             >
             <[event_value][DEV0][]
             >
@@ -41,7 +40,7 @@
                 <[bool][InCockpit][true]>
             >
             <[camera][CameraCoPilot][]
-                <[string8][Tags][cockpit pilot right]>
+                <[string8][Tags][cockpit copilot right]>
                 <[string8][Body][Fuselage]>
                 <[tmvector3d][R0][ -0.26 -0.24 0.38 ]>
                 <[tmvector3d][Direction][1.0 0.0 0.0]>
