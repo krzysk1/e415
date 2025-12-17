@@ -3,10 +3,10 @@
         <[pointer_list_tmuniverse][DynamicObjects][]
 
             // engine
-            <[input_lever][ThrottleInput][63]
+            <[input_lever][ThrottleInput][]
                 <[float64][Value][0.6]>
             >
-            <[servoclassic][ServoThrottle][65]
+            <[servoclassic][ServoThrottle][]
                 <[float64][Position][0.6]>
             >
             <[multibody_joint][PropellerJoint][]
@@ -16,64 +16,64 @@
             // gear bolted down
 
             // flaps up
-            <[input_default][FlapsInput][0]
+            <[input_default][FlapsInput][]
                 <[float64][Value][0.0]>
             >
-            <[electrical_actuator][FlapsMotor][0]
+            <[electrical_actuator][FlapsMotor][]
                 <[float64][Position][0.0]>
             >
 
             // maybe lean mixture a bit
 
             // trim forward
-            <[input_default][PitchTrim][84]
+            <[input_default][PitchTrim][]
                 <[float64][Value][0.54]>
             >
-            <[servoclassic][ServoElevator][69]
+            <[servoclassic][ServoElevator][]
                 <[float64][Position][-0.0455]>
             >
 
             // lights
-            <[input_switch][StrobeLightSwitch][0]
+            <[input_switch][StrobeLightSwitch][]
                 <[float64][Value][1.0]>
             >
-            <[input_switch][BeaconLightSwitch][0]
+            <[input_switch][BeaconLightSwitch][]
                 <[float64][Value][1.0]>
             >
-            <[input_switch][NavigationLightSwitch][0]
+            <[input_switch][NavigationLightSwitch][]
                 <[float64][Value][1.0]>
             >
-            <[input_switch][LandingLightSwitch][0]
+            <[input_switch][LandingLightSwitch][]
                 <[float64][Value][0.0]>
             >
-            <[input_switch][TaxiLightSwitch][0]
+            <[input_switch][TaxiLightSwitch][]
                 <[float64][Value][0.0]>
             >
 
             // panel state
-            <[input_switch][SwitchAvionicsBus1][0]
+            <[input_switch][SwitchAvionicsBus1][]
                 <[float64][Value][1.0]>
             >
-            <[input_switch][SwitchAvionicsBus2][0]
+            <[input_switch][SwitchAvionicsBus2][]
                 <[float64][Value][1.0]>
             >
 
-            <[input_switch][DMESelectedOn][0]
+            <[input_switch][DMESelectedOn][]
                 <[float64][Value][1.0]>
             >
-            <[input_default][ADFVolume][0]
+            <[input_default][ADFVolume][]
                 <[float64][Value][0.1]>
             >
-            <[input_default][COM1Volume][0]
+            <[input_default][COM1Volume][]
                 <[float64][Value][0.6]>
             >
-            <[input_default][COM2Volume][0]
+            <[input_default][COM2Volume][]
                 <[float64][Value][0.1]>
             >
-            <[input_discrete][TransponderMode][0]
+            <[input_discrete][TransponderMode][]
                 <[float64][Value][4.0]>
             >
-            <[variable][TransponderIdent][0]
+            <[variable][TransponderIdent][]
                 <[float64][Value][0.0]>
             >
 

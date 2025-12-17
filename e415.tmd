@@ -86,7 +86,7 @@
 
             // rigidbody systems start
 
-            // airframe     mass: 517.9 ( -0.116 0.040 -0.206 )
+            // airframe
             <[rigidbody][Fuselage][]
                 <[float64][Mass][250.0]>
                 <[tmvector3d][InertiaLength][4.309360 1.088573 1.409142]>
@@ -145,25 +145,29 @@
 
             // fuel system start
             // max 90l avgas with 0.780 kg per l avgas
-            <[rigidbody][FuelMass][]
-                <[float64][Mass][60.0]>
-                <[tmvector3d][InertiaLength][0.4 2.6 0.2]>
-                <[tmvector3d][R0][0.0 0.0 -0.5 ]>
-                <[tmmatrix3d][B0][ 1.0 0.0 0.0  0.0 1.0 0.0  0.0 0.0 1.0 ]>
+            <[fuel_tank][FuelTank][]
+                <[string8][Body][Fuselage]>
+                <[float64][Capacity][90.0]>
+                <[float64][Mass][70.0]>
+                <[tmvector3d][Outlet0][ 0.0 0.0 -0.6 ]>
+                <[fuel_tank_stations][Stations][]
+                    <[fuel_tank_station][][]
+                        <[tmvector3d][R0][ 0.0 1.3 -0.5 ]>
+                        <[tmvector3d][X0][ 1.0 0.0 0.0 ]>
+                        <[tmvector3d][Y0][ 0.0 0.0 1.0 ]>
+                        <[tmvector3d][Dimensions][ 0.4 0.2  ]>
+                    >
+                    <[fuel_tank_station][][]
+                        <[tmvector3d][R0][ 0.0 -1.30 -0.5 ]>
+                        <[tmvector3d][X0][ 1.0 0.0 0.0 ]>
+                        <[tmvector3d][Y0][ 0.0 0.0 1.0 ]>
+                        <[tmvector3d][Dimensions][ 0.4 0.2 ]>
+                    >
+                >
+                <[tmvector2d][MassMap][ ( 0.0 0.0 ) ( 70.0 70.0 ) ]>
             >
-            <[multibody_joint][JointFuelMass][]
-                <[string8][Body0][Fuselage]>
-                <[string8][Body1][FuelMass]>
-                <[tmvector3d][X0] [ 1.0 0.0 0.0 ]>
-                <[tmvector3d][R0][0.0 0.0 -0.5]>
-                <[float64][Kp][50000.0]>
-                <[float64][Kd][1000.0]>
-                <[float64][InitialVelocity][0.0]>
-                <[uint32][Type][0]>
-            >
-
-            // fuel after fuel tank
-            <[fuel_deprecated_tank][FuelTank][]
+            // fuel after fuel tank (deprecated)
+            <[fuel_deprecated_tank][FuelTank0][]
                 <[float64][MassFull][70.0]>
                 <[float64][FillLevel][1.0]>
                 <[string8][InputPressure][FuelTankFuelLine.Output]>
@@ -232,21 +236,14 @@
             >
 
             // payload
-            <[rigidbody][PilotBody][]
-                <[float64][Mass][90.0]>
-                <[tmvector3d][InertiaLength][0.4 0.4 0.7]>
-                <[tmvector3d][R0][-0.30 0.23 0.0]>
+            <[persons][CrewBody][]
+                <[float64][Mass][80.0]>
+                <[string8][Body][Fuselage]>
+                <[tmvector3d][InertiaLength][0.4 0.9 0.7]>
+                <[tmvector3d][R0][-0.30 0.0 0.0]>
                 <[tmmatrix3d][B0][ 0.965926 0.0 0.258819  0.0 1.0 0.0 -0.258819 0.0 0.965926 ]>
-            >
-            <[multibody_joint][JointPilotBody][]
-                <[string8][Body0][Fuselage]>
-                <[string8][Body1][PilotBody]>
-                <[tmvector3d][X0][ 1.0 0.0 0.0 ]>
-                <[tmvector3d][R0][ -0.30 0.23 0.0 ]>
-                <[float64][Kp][50000.0]>
-                <[float64][Kd][1000.0]>
-                <[float64][InitialVelocity][0.0]>
-                <[uint32][Type][0]>
+                <[float64][MinimumPersons][1.0]>
+                <[float64][MaximumPersons][2.0]>
             >
 
             // rigidbody systems end

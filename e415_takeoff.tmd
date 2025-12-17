@@ -6,18 +6,18 @@
 
 
             // lights
-            <[input_switch][NavigationLightSwitch][0]
+            <[input_switch][NavigationLightSwitch][]
                 <[float64][Value][1.0]>
             >
-            <[input_switch][LandingLightSwitch][0]
+            <[input_switch][LandingLightSwitch][]
                 <[float64][Value][1.0]>
             >
 
             // panel state
-            <[input_switch][SwitchAvionicsBus1][0]
+            <[input_switch][SwitchAvionicsBus1][]
                 <[float64][Value][1.0]>
             >
-            <[input_switch][SwitchAvionicsBus2][0]
+            <[input_switch][SwitchAvionicsBus2][]
                 <[float64][Value][1.0]>
             >
 
