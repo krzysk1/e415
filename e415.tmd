@@ -893,11 +893,8 @@
                 <[string8][Body][Fuselage]>
                 <[tmvector3d][R0][0.601470 0.000470 0.878380]>
             >
-            <[input_default][PressureSetting][]
+            <[input_pressure_setting][PressureSetting][]
                 <[string8][Message][PressureSetting]>
-                <[uint][Positions][201]>
-                <[tmvector2d][Range][ 95000.0 105000.0 ]>
-                <[float64][Value][101325.0]>
             >
             <[output_free][PressureSettingOutput][]
                 <[string8][Input][PressureSetting.Output]>
@@ -1741,7 +1738,7 @@
                 <[string8][InputIllumination0][PanelLighting.Output]>
             >
             <[graphics_input][CockpitInput_12][]
-                <[uint32][InputID][ElevatorTrim.Output]>
+                <[uint32][InputID][ElevatorTrimInput.Output]>
             >
             <[graphics_linear_interpolation][CockpitMapping_178][]
                 <[string8][Input][CockpitInput_12.Output]>

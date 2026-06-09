@@ -4,7 +4,7 @@
 
             // trim
             <[control_input][TrimLeverInput][]
-                <[uint32][InputID][ElevatorTrim.Output]>
+                <[uint32][InputID][ElevatorTrimInput.Output]>
                 <[float64][Scaling][2.0]>
                 <[float64][Offset][-1.0]>
             >
